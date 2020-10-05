@@ -1,0 +1,42 @@
+$ecran-ordinateur : "screen and (min-width:960px)";
+$ecran-tablette-paysage : "screen and (max-width:768px) and (min-width:960px)";
+$ecran-tablette-portrait : "screen and (max-width:480px) and (min-width:768px)";
+
+// palette de couleurs 
+$rose-clair : #fcdada;
+$rose : #ffa5a5;
+$bleu : #5c969e ;
+$bleu-fonce : #3d7ea6 ;
+
+// utiliser les variables 
+
+@media #{ $ecran-ordinateur }{
+    h1{
+        font-size: 22px;
+    }
+    p{
+        font-size: 14px;
+        color: $bleu-fonce;
+    }
+}
+@media #{ $ecran-tablette-paysage }{
+    h1{
+        font-size: 20px;
+        color:$rose-clair;
+    }
+    p{
+        font-size: 12px;
+        color: $bleu;
+    }
+}
+@media #{ $ecran-tablette-portrait  }{
+    h1{
+        font-size: 18px;
+        color:$rose;
+    }
+    p{
+        font-size: 12px;
+    }
+}
+
+// 10-partial.scss 
