@@ -1,0 +1,53 @@
+// créer un fichier 04-hello.scss 
+
+// possibilité d'avoir une autre manière décrire du sass => ressemble plus à du css
+
+#hello {
+    color: red ;
+    font-weight: 900;
+    text-align: justify
+}
+
+.first {
+    font-size: large;
+}
+
+// si vous créer des fichiers .scss
+// pas de soucis pour utiliser les accolades 
+// et les points virgules à la fin des règles
+
+// Affinité => utilise css depuis longtemps 
+// laisser la possibilité d'utiliser les accolades 
+
+// pour les utilisateurs Python 
+// où vous pouvez enlever les {} et le ; 
+
+// mais les espaces avant les règles css 
+// sont OBLIGATOIRES => choix
+
+// Affinité !!  => personnellement => .scss 
+// aucun problème pour tout écrire en .sass
+
+// en général => on sauvegarde les lignes de code
+// saisie 1 fois / minutes 
+// le compilateur va vérifier que tu respectes bien toutes les règles 
+
+// créer le fichier 05-exo.scss 
+
+// ce fichier contient les règles css suivantes :
+
+// pour la balise qui a la class first, elle dispose des styles suivants
+
+// famille de police de caractère => Arial
+// taille de police 20px
+// soulignée 
+
+// pour toutes les balises div , elles disposes des styles suivants :
+
+// bordure de 1px pointillée de couleur rouge 
+// marge internet en haut et en bas => 20 px  et à gauche et à droite 0 
+
+// pour le dernier li de la page
+// supprimer marge intérieur à gauche 
+
+// compiler le fichier .scss => .css 
