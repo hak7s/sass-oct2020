@@ -1,0 +1,17 @@
+.first{
+    font-family: Arial;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+div{
+    // mdn border => border-style
+    border: 1px dotted red;
+    // dotted => point => .
+    // dash => trait => -
+    padding: 20px 0;
+}
+
+li:last-child{
+    padding-left: 0;
+}
