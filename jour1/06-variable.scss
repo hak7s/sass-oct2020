@@ -1,0 +1,29 @@
+// le concept n'existe pas en css 
+
+// créer une variable en sass 
+$color: yellow;
+$largeur: 200px;
+$marge-interne: 20px 0;
+$bordure: 1px solid green;
+$bordure-special: 2px solid $color;
+// pas de problème pour stocker plusieurs valeur
+
+// utiliser la variable dans des règles sass
+p{
+    color: $color;
+    width: $largeur;
+    margin: $marge-interne;
+    border: $bordure ;
+}
+h1{
+    border: 1px dotted $color;
+    height: $largeur;
+    border: $bordure-special;
+}
+
+li{
+    width: $largeur / 4; 
+    // vous pouvez effectuer des calculs 
+    height: ($largeur + 10) * 2;
+}
+

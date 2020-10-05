@@ -1,0 +1,18 @@
+p {
+  color: yellow;
+  width: 200px;
+  margin: 20px 0;
+  border: 1px solid green;
+}
+
+h1 {
+  border: 1px dotted yellow;
+  height: 200px;
+  border: 2px solid yellow;
+}
+
+li {
+  width: 50px;
+  height: 420px;
+}
+/*# sourceMappingURL=06-variable.css.map */
