@@ -1,0 +1,53 @@
+$color : #e74c3c;
+$color-hover : #34495e ;
+$autre-color : #f1c40f;
+
+.first {
+    li{
+        color:$color;
+        &:hover{
+            color :  $autre-color ;
+        }
+        &:first-child{
+            color : #2980b9;
+        }
+    }
+}
+.last{
+    li{
+        &::after{
+            content: " - ";
+        }
+    }
+}
+
+
+// ça va ??
+// si vous avez des pseudo sélecteur :hover :focus :last-child  :nth-child() ::after ::before
+
+// ET que vous voulez utiliser l'imbrication 
+// utiliser le symbole &:pseudo-selecteur
+
+li:hover{
+    color:$color-hover;
+}
+
+// vous pouvez utiliser les imbrications lorsque vous faites du responsive design 
+
+@import "_responsive";
+// importer les variables => reponsive design 
+
+.last{
+    li{
+        color : #8e44ad;
+        // possibilité d'imbriquer les règles responsive design directement
+        // dans l'imbrication
+        @media #{ $ecran-tablette-paysage } {
+            color : #1abc9c;
+        }
+    }
+}
+
+/*
+
+*/

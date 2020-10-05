@@ -1,0 +1,34 @@
+.first li {
+  color: #e74c3c;
+}
+
+.first li:hover {
+  color: #f1c40f;
+}
+
+.first li:first-child {
+  color: #2980b9;
+}
+
+.last li::after {
+  content: " - ";
+}
+
+li:hover {
+  color: #34495e;
+}
+
+.last li {
+  color: #8e44ad;
+}
+
+@media screen and (min-width: 768px) and (max-width: 960px) {
+  .last li {
+    color: #1abc9c;
+  }
+}
+
+/*
+
+*/
+/*# sourceMappingURL=14-nesting-suite.css.map */
