@@ -1,0 +1,38 @@
+@charset "UTF-8";
+@media screen and (min-width: 960px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 960px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.7rem;
+  }
+}
+
+/*
+dans ce fichier vous allez créer 4 variables : 4 couleurs 
+// https://flatuicolors.com/palette/defo
+turquoise / emerald / peter-river / amethyst affecter la bonne couleur 
+*/
+/*
+utiliser les variables dans des règles css 
+si tablette en portrait 
+    h1 taille 25px et une couleur amethyst
+    p  taille de 15px et une couleur emerald
+    body couleur de fond turquoise
+
+si tablette en paysage 
+    h1 taille 27px et une couleur emerald
+    p  taille de 17px et une couleur peter-river
+    body couleur de fond amethyst    
+
+*/
+/*# sourceMappingURL=10-partial.css.map */

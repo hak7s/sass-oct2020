@@ -1,0 +1,6 @@
+// quelquesoit le projet que l'on va réaliser 
+// ces 3 variables qui contiennent des largeurs => toujours vrai 
+
+$ecran-ordinateur : "screen and (min-width:960px)";
+$ecran-tablette-paysage : "screen and (max-width:768px) and (min-width:960px)";
+$ecran-tablette-portrait : "screen and (max-width:480px) and (min-width:768px)";

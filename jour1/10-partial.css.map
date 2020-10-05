@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": ";AAwBA,MAAM,CAAC,MAAM,MAAM,SAAS,EAAC,KAAK;EAC9B,AAAA,EAAE,CAAA;IACE,SAAS,EAAE,IAAI;GAClB;EACD,AAAA,EAAE,CAAA;IACE,SAAS,EAAE,IAAI;GAClB;;;AAGL,MAAM,CAAC,MAAM,MAAM,SAAS,EAAC,KAAK,OAAO,SAAS,EAAC,KAAK;EACpD,AAAA,EAAE,CAAA;IACE,SAAS,EAAE,IAAI;GAClB;EACD,AAAA,EAAE,CAAA;IACE,SAAS,EAAE,MAAM;GACpB;;;AAML;;;;EAIE;AAOF;;;;;;;;;;;;EAYE",
+    "sources": [
+        "10-partial.scss",
+        "_responsive.scss"
+    ],
+    "names": [],
+    "file": "10-partial.css"
+}

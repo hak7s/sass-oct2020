@@ -1,0 +1,72 @@
+// autre grande force du language sass 
+// découper vos fichiers en plusieurs fichiers 
+// éviter d'avoir un fichier css unique dans lequel vous 2000 lignes 
+// séparer les différentes parties de votre mis en forme en plusieurs fichiers 
+
+// dans l'exemple précédent 
+// créer pleins de variables 
+// notamment les variables pour les tailles d'écran pour le responsive
+// REUTILISER dans un autre projet 
+// créer un fichier à part qui va contenir nos variables 
+// _responsive.scss 
+// tiret bas // underscore // tiret du 8 
+// nom du fichier => le nom de vous voulez 
+
+// <script src="fichier.js"></script>
+// <link href="style.css" ref="stylescheet">
+// copier le contenu du fichier _responsive.scss
+// et que vous le collez dans le fichier 10-partial.scss
+
+@import "_responsive.scss"; // fichier qui contient une partie du code sass = partial 
+
+$rose-clair : #fcdada;
+$rose : #ffa5a5;
+// utilisation de variables dans règles css
+@media #{ $ecran-ordinateur }{
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+}
+
+@media #{ $ecran-tablette-paysage }{
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.7rem;
+    }
+}
+
+// je vais vous faire des cas => en + html
+
+// créer un nouveau fichier _palette.scss
+/*
+dans ce fichier vous allez créer 4 variables : 4 couleurs 
+// https://flatuicolors.com/palette/defo
+turquoise / emerald / peter-river / amethyst affecter la bonne couleur 
+*/
+
+// cas pratique créer le fichier 11-exo.scss 
+
+// ce fichier import le fichier _responsive.scss
+// ce fichier import le fichier _palette.scss
+
+/*
+utiliser les variables dans des règles css 
+si tablette en portrait 
+    h1 taille 25px et une couleur amethyst
+    p  taille de 15px et une couleur emerald
+    body couleur de fond turquoise
+
+si tablette en paysage 
+    h1 taille 27px et une couleur emerald
+    p  taille de 17px et une couleur peter-river
+    body couleur de fond amethyst    
+
+*/
+
+
+
