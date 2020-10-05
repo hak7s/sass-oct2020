@@ -1,0 +1,20 @@
+// nesting = imbriquer une règle css dans une autre  = pour éviter d'avoir à répéter
+// le premier sélecteur 
+.diaporama{
+    width: 300px ;
+    overflow: hidden; // si vous avez un élément qui dépasse masquer 
+    h2{
+        text-align: center;
+    }
+    img{
+        width:300px;
+    }
+}
+
+.presentation {
+    h2{
+        color: red;
+        text-decoration: underline;
+    }
+}
+
