@@ -1,3 +1,4 @@
+@charset "UTF-8";
 p {
   color: blue;
 }
@@ -34,4 +35,25 @@ h1 {
     color: red;
   }
 }
+
+/*
+créer une variable ecran-ordinateur => stocker médiaquery screen and taille ecran minimum 960px
+créer une variable ecran-tablette-paysage => stocker médiaquery screen and taille ecran minimum 768px et max 960px
+créer une variable ecran-tablette-portrait => stocker médiaquery screen and taille ecran minimum 480px et max 768px
+
+créer 4 variables de couleur en utilisant une palette de couleur fourni par le site 
+rose-clair
+rose
+bleu
+bleu-fonce 
+https://colorhunt.co/ => site qui vous donne des palettes de couleurs 
+
+
+utiliser ces variables 
+
+si l'écran est ordinateur => h1 taille de 22px et les p taille de 14px et couleur blue foncé
+si l'écran est tablette-paysage => h1 taille de 20px et rose-clair et les p taille de 12px couleur bleu clair
+si l'écran est tablette-portrait => h1 taille de 18px et rose et les p taille de 12px
+
+*/
 /*# sourceMappingURL=08-variable-selecteur.css.map */
