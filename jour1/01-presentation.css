@@ -1,0 +1,9 @@
+@charset "UTF-8";
+/* start */
+/* premier mot clés ajouté à sass et qui n'est pas disponible en css // */
+/* dans un fichier sass vous pouvez écrire */
+p {
+  font-size: 10px;
+  font-weight: bold;
+}
+/*# sourceMappingURL=01-presentation.css.map */

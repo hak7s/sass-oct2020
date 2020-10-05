@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/* si j'avais à écrire du css , je devrai écrire */
+p {
+  color: red;
+  font-weight: bold;
+  border: 1px solid blue;
+  text-shadow: 2px 2px 2px grey;
+}
+
+.intro {
+  color: blue;
+}
+/*# sourceMappingURL=02-hello.css.map */
