@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": ";AAKA,AAAA,MAAM,CAAC,EAAE,CAAA;EACL,KAAK,ECNI,OAAO;CDOnB;;AAED,AAAA,MAAM,CAAC,EAAE,CAAA;EACL,KAAK,ECTE,OAAO;CDUjB;;AACD,iDAAiD;AACjD,4DAA4D;AAC5D,iDAAiD;AAEjD,AACI,MADE,CACF,EAAE,CAAA;EACE,KAAK,EClBA,OAAO;CDmBf;;AAHL,AAII,MAJE,CAIF,EAAE,CAAA;EACE,KAAK,ECpBF,OAAO;CDqBb;;AAKL,AACI,KADC,CACD,EAAE,CAAA;EACE,KAAK,EC1BD,OAAO;ED2BX,SAAS,EAAG,IAAI;CACnB;;AAJL,AAKI,KALC,CAKD,CAAC,CAAA;EACG,SAAS,EAAE,IAAI;EACf,KAAK,EChCE,OAAO;CDiCjB;;AAIL;;;;;;;;;;;;;;;;;;;;;;;EAuBE",
     "sources": [
-        "12-nesting.scss"
+        "12-nesting.scss",
+        "_palette.scss"
     ],
     "names": [],
     "file": "12-nesting.css"

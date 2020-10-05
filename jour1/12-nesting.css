@@ -1,1 +1,55 @@
-/* No CSS *//*# sourceMappingURL=12-nesting.css.map */
+@charset "UTF-8";
+header h2 {
+  color: #1abc9c;
+}
+
+header li {
+  color: #2ecc71;
+}
+
+/* syntaxe classique lorsque l'on écrit en css */
+/* vous avez l'équivalent avec sass nesting = imbrication */
+/* je mets une règle dans une autre => nesting */
+header h2 {
+  color: #1abc9c;
+}
+
+header li {
+  color: #2ecc71;
+}
+
+.main h2 {
+  color: #9b59b6;
+  font-size: 30px;
+}
+
+.main p {
+  font-size: 20px;
+  color: #3498db;
+}
+
+/*
+dans ce fichier vous allez avoir le html suivant 
+appeler le fichier 13-exo.css
+div class container
+    section class diaporama
+        h2  contient le texte diaporama
+        4 images 
+    section class= presentation
+        h2  Présentation
+        3 paragraphes avec 30 mots factices chacuns
+
+créer le fichier 13-exo.scss
+    styliser  le h2 dans le diaporama
+        centrer dans la page
+    styliser la balise qui a la class diaporama => largeur de 300px // tout ce qui déborde est masqué
+    
+    styliser les images dans la balise qui a la class diaporama
+        faire en forme quelles aient la largeur de 300px
+
+    styliser le h2 dans la balise ayant la class presentation
+        en rouge et souligné
+        
+
+*/
+/*# sourceMappingURL=12-nesting.css.map */
