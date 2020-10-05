@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAIA,AAAA,CAAC,CAAA;EACG,WAAW,EALN,KAAK;EAMV,SAAS,EAAE,GAAkB;CAChC;;AAED,AAAA,EAAE,CAAA;EACE,KAAK,EARE,GAAG;EASV,SAAS,EAAE,IAAkB;CAChC;;AAED,AAAA,EAAE,CAAA;EACE,WAAW,EAfN,KAAK;EAgBV,KAAK,EAdE,GAAG;EAeV,SAAS,EAhBG,GAAG;CAiBlB",
+    "sources": [
+        "07-exo.scss"
+    ],
+    "names": [],
+    "file": "07-exo.css"
+}

@@ -1,0 +1,21 @@
+$police: Arial ;
+$taille-police: 15% ;
+$couleur : red ;
+
+p{
+    font-family: $police;
+    font-size: $taille-police * 2;
+}
+
+h1{
+    color: $couleur;
+    font-size: $taille-police / 2;
+}
+
+li{
+    font-family: $police;
+    color: $couleur;
+    font-size: $taille-police ;
+}
+
+// créer le fichier 08-variable-selecteur.scss
