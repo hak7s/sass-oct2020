@@ -1,0 +1,37 @@
+// manière longue en précisant l'extension
+@import "_palette.scss";
+@import "_responsive.scss";
+
+// manière courte sans préciser l'extension
+@import "_palette";
+@import "_responsive";
+
+// utiliser mes variables dans du sass
+@media #{ $ecran-tablette-portrait }{
+    h1{
+        font-size:25px;
+        color : $amethyst;
+    }
+    p{
+        font-size:15px;
+        color : $emerald;
+    }
+    body{
+        background: $turquoise;
+    }
+}
+@media #{ $ecran-tablette-paysage }{
+    h1{
+        font-size:27px;
+        color : $emerald;
+    }
+    p{
+        font-size:17px;
+        color : $peter-river;
+    }
+    body{
+        background: $amethyst;
+    }   
+}
+
+// plus petit que si vous aviez à tout stocker dans un seul fichier .css

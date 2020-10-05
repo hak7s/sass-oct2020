@@ -1,0 +1,28 @@
+@media screen and (max-width: 480px) and (min-width: 768px) {
+  h1 {
+    font-size: 25px;
+    color: #9b59b6;
+  }
+  p {
+    font-size: 15px;
+    color: #2ecc71;
+  }
+  body {
+    background: #1abc9c;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 960px) {
+  h1 {
+    font-size: 27px;
+    color: #2ecc71;
+  }
+  p {
+    font-size: 17px;
+    color: #3498db;
+  }
+  body {
+    background: #9b59b6;
+  }
+}
+/*# sourceMappingURL=11-exo.css.map */
