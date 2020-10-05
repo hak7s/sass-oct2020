@@ -1,3 +1,4 @@
+@charset "UTF-8";
 p {
   color: yellow;
   width: 200px;
@@ -15,4 +16,20 @@ li {
   width: 50px;
   height: 420px;
 }
+
+/*
+créer dans de fichier trois variables 
+police Arial
+taille-police 15 %
+couleur rouge 
+
+réaliser les 3 règles css suivantes (en utilisant les variables)
+
+tous les p doivent avoir la police Arial et la taille de police de 30%
+
+tous les h1 doivent être de couleur rouge et de taille de police 7.5%
+
+tous les li doivent être de couleur rouge / taille 15% et police Arial
+
+*/
 /*# sourceMappingURL=06-variable.css.map */
