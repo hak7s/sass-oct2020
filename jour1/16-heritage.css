@@ -1,0 +1,16 @@
+.btn, .btn-danger, .btn-info {
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 1px solid black;
+}
+
+.btn-danger {
+  color: white;
+  background: red;
+}
+
+.btn-info {
+  color: blue;
+  background: green;
+}
+/*# sourceMappingURL=16-heritage.css.map */

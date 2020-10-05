@@ -1,0 +1,30 @@
+$vert : #2ecc71;
+$rouge : #e74c3c;
+$bleu : #3498db;
+$tablette : "screen and (min-width:400px) and (max-width:700px)";
+$jaune : #f1c40f;
+
+.intro{
+    p{
+        color : $rouge;
+    }
+    *{
+        &:nth-child(4){ /* --- pourquoi ça marche pas ????  */
+            color : $vert;
+        }
+    }
+}
+
+.conclusion p:last-child{
+      &:hover{
+          color : $bleu;
+      }
+}
+
+p{
+    @media #{ $tablette } {
+        color : $jaune !important;
+    }
+}
+
+// créer le fichier 16-heritage.scss

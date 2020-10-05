@@ -1,0 +1,20 @@
+@charset "UTF-8";
+.intro p {
+  color: #e74c3c;
+}
+
+.intro *:nth-child(4) {
+  /* --- pourquoi ça marche pas ????  */
+  color: #2ecc71;
+}
+
+.conclusion p:last-child:hover {
+  color: #3498db;
+}
+
+@media screen and (min-width: 400px) and (max-width: 700px) {
+  p {
+    color: #f1c40f !important;
+  }
+}
+/*# sourceMappingURL=15-exo.css.map */

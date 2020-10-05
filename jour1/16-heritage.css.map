@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,IAAI,EAUJ,WAAW,EAKX,SAAS,CAfL;EAEA,aAAa,EAAE,GAAG;EAClB,OAAO,EAAE,QAAQ;EACjB,MAAM,EAAG,eAAe;CAC3B;;AAKD,AAAA,WAAW,CAAA;EAEP,KAAK,EAAG,KAAK;EACb,UAAU,EAAE,GAAG;CAClB;;AACD,AAAA,SAAS,CAAA;EAEL,KAAK,EAAG,IAAI;EACZ,UAAU,EAAE,KAAK;CACpB",
+    "sources": [
+        "16-heritage.scss"
+    ],
+    "names": [],
+    "file": "16-heritage.css"
+}

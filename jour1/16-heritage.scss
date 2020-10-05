@@ -1,0 +1,23 @@
+// nouveau concept // absent de css => héritage 
+
+// tous les boutons que l'on a dans notre site => dispose de ces 3 règles au minimum 
+.btn{
+    // coins qui sont arrondis
+    border-radius: 5px;
+    padding: 5px 10px;
+    border : 1px solid black;
+}
+
+// mais ce bouton en + des 3 règles 
+// texte dans le bouton est blanc 
+// fond rouge
+.btn-danger{
+    @extend .btn;
+    color : white;
+    background: red;
+}
+.btn-info{
+    @extend .btn;
+    color : blue;
+    background: green;
+}
