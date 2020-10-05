@@ -1,0 +1,62 @@
+// vous pouvez créer des variables qui vont stocker
+// une ou plusieurs valeurs 
+
+// vous pouvez aussi créer des variables 
+// qui vont stocker des sélecteurs
+
+$color: blue ;
+$titre: ".introduction p" ; // vous devez le mettre en double quote 
+// liste de valeurs
+$data: red blue yellow green pink;
+
+p {
+    color : $color;
+}
+
+#{ $titre }{
+    color : $color;
+}
+
+// #{ $nom_variable }
+
+h1{
+   color: nth($data , 1);
+   border: 1px solid nth($data , 3);
+   //font-size: $data ;
+}
+
+// responsive design 
+// max l'écran va avoir une largeur de 320px 
+
+$smartphone-portrait: "screen and (max-width:321px)" ;
+// écran => largeur mini 320px et max 480px 
+
+$smartphone-paysage: "screen and (min-width:320px) and (max-width:480px)" ;
+// 480px => 768px
+$tablette-portrait : "screen and (min-width:480px) and (max-width:768px) " ;
+
+@media #{ $smartphone-portrait } {
+    h1{
+        color: red;
+    }
+}
+
+@media #{ $smartphone-paysage }{
+    p{
+        font-size : 30px;
+    }
+}
+
+@media #{ $tablette-portrait }{
+    li{
+        font-size: 30px;
+    }
+}
+
+
+
+@media #{ $smartphone-portrait } {
+    p{
+        color: red;
+    }
+}

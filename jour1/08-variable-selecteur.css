@@ -1,0 +1,37 @@
+p {
+  color: blue;
+}
+
+.introduction p {
+  color: blue;
+}
+
+h1 {
+  color: red;
+  border: 1px solid yellow;
+}
+
+@media screen and (max-width: 321px) {
+  h1 {
+    color: red;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  p {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  li {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  p {
+    color: red;
+  }
+}
+/*# sourceMappingURL=08-variable-selecteur.css.map */
