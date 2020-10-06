@@ -1,0 +1,56 @@
+.hello{
+    display: flex;
+
+    p{
+        border:1px solid black;
+        padding: 10px;
+
+        &:first-child{
+            animation:  apparition-gauche 2s; 
+        }
+        &:last-child{
+            animation: apparition-droite 2s;
+        }
+    }
+}
+/*
+@keyframes apparition-gauche{
+    from{ // au début des 2 secondes 
+        transform : translateX(-1000px);
+    }
+    to{ // on est à la fin de l'animation qui dure 2 secondes 
+        transform : translateX(0px);
+    }
+}
+
+@keyframes apparition-droite{
+    from{
+        transform : translateX(1000px);
+    }
+    to{ // on est à la fin de l'animation qui dure 2 secondes 
+        transform : translateX(0px);
+    }
+}*/
+
+@mixin apparition( $nom-animation , $origin ){
+    @keyframes #{  $nom-animation }{
+        from{
+            transform : translateX( $origin );
+        }
+        to{ // on est à la fin de l'animation qui dure 2 secondes 
+            transform : translateX(0px);
+            // position dans le DOM naturelle de l'élément 
+        }
+    }
+}
+// premier exemple => ne pas se répéter // avec des valeurs différentes 
+
+@include apparition( apparition-gauche , -1000px );
+@include apparition( apparition-droite , 1000px );
+
+
+
+// animation en css 
+// transition => effet au moment
+// animation => 
+// je veux que le 1ère p qui dans .hello => apparaisse par la droite 

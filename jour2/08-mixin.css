@@ -1,0 +1,49 @@
+@charset "UTF-8";
+.p {
+  font-size: 20px;
+  border-bottom: 1px solid darkcyan;
+}
+
+.h1 {
+  font-size: 20px;
+  border-bottom: 1px solid darkcyan;
+}
+
+.p, .h1 {
+  font-size: 20px;
+  border-bottom: 1px solid darkcyan;
+}
+
+/* mixin */
+.p {
+  font-size: 20px;
+  border-bottom: 1px solid darkcyan;
+}
+
+.h1 {
+  font-size: 20px;
+  border-bottom: 1px solid darkcyan;
+}
+
+/* mixin avec des paramètres */
+.p {
+  font-size: 15px;
+  border-bottom: 1px solid yellow;
+}
+
+.h1 {
+  font-size: "40px";
+  border-bottom: 1px solid "brown";
+}
+
+/* mixin avec paramètres et valeurs par défaut */
+.p {
+  font-size: 17px;
+  border-bottom: 1px solid blue;
+}
+
+.h1 {
+  font-size: 42px;
+  border-bottom: 1px solid green;
+}
+/*# sourceMappingURL=08-mixin.css.map */

@@ -1,0 +1,84 @@
+// en sass vous avez la possibilité de créer des fonctions => @mixin
+
+// exemple mixin sans argument 
+
+.p{
+    font-size: 20px;
+    border-bottom: 1px solid darkcyan;
+}
+
+.h1{
+    font-size: 20px;
+    border-bottom: 1px solid darkcyan;
+}
+
+// héritage 
+
+%style{
+    font-size: 20px;
+    border-bottom: 1px solid darkcyan;  
+}
+
+.p{
+    @extend %style;
+}
+
+.h1{
+    @extend %style;
+}
+
+// autre manière de faire la même chose => créer une mixin sans paramètres
+/* mixin */
+@mixin mise-en-forme{
+    font-size: 20px;
+    border-bottom: 1px solid darkcyan;  
+}
+// utiliser => @include nom de la fonction == mixin
+.p{
+    @include mise-en-forme ;
+}
+
+.h1{
+    @include mise-en-forme ;
+}
+
+// fonction avec des paramètres 
+// vous pouvez mettre autant de paramètre que vous voulez
+/* mixin avec des paramètres */
+@mixin mise-en-forme-v2( $font-size , $color-border-bottom ){ 
+    font-size: $font-size ;
+    border-bottom: 1px solid $color-border-bottom;
+}
+
+// utiliser la mixin 
+
+.p{
+    @include mise-en-forme-v2( 15px , yellow );
+}
+
+// ne pas mettre les paramètres en double quote 
+// car ça va écrire tel quel 
+.h1{
+    @include mise-en-forme-v2( "40px" , "brown" );
+}
+
+// il est possible de donner des valeurs par défaut 
+// aux paramètres des mixins
+/* mixin avec paramètres et valeurs par défaut */
+@mixin mise-en-forme-v3($font-size , $color-border-bottom : blue){
+    font-size: $font-size ;
+    border-bottom: 1px solid $color-border-bottom;
+}
+// utilise la valeur par défaut de $color-border-bottom
+// le paramètre $font-size ne dispose pas de valeur par défaut
+// donc il faudra le préciser lors de l'appel de la mixin
+.p{
+    @include mise-en-forme-v3( 17px );
+}
+
+// modifier la valeur par défaut $color-border-bottom
+.h1{
+    @include mise-en-forme-v3( 42px , green  );
+}
+
+// 09-exemple-mixin.html // 09-exemple-mixin.scss

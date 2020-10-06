@@ -1,0 +1,83 @@
+@charset "UTF-8";
+.hello {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hello p {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.hello p:first-child {
+  -webkit-animation: apparition-gauche 2s;
+          animation: apparition-gauche 2s;
+}
+
+.hello p:last-child {
+  -webkit-animation: apparition-droite 2s;
+          animation: apparition-droite 2s;
+}
+
+/*
+@keyframes apparition-gauche{
+    from{ // au début des 2 secondes 
+        transform : translateX(-1000px);
+    }
+    to{ // on est à la fin de l'animation qui dure 2 secondes 
+        transform : translateX(0px);
+    }
+}
+
+@keyframes apparition-droite{
+    from{
+        transform : translateX(1000px);
+    }
+    to{ // on est à la fin de l'animation qui dure 2 secondes 
+        transform : translateX(0px);
+    }
+}*/
+@-webkit-keyframes apparition-gauche {
+  from {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+@keyframes apparition-gauche {
+  from {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes apparition-droite {
+  from {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes apparition-droite {
+  from {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+/*# sourceMappingURL=09-exemple-mixin.css.map */
