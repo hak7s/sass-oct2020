@@ -1,0 +1,105 @@
+<!-- 03-flex.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  rappel ou découverte display flex et display grid 
+        après la pause => utiliser dans sass 
+        rdv 10h45 pour la suite du cours !
+    -->
+
+    <style>
+        /*par défaut les h2, p et img se mettent l'un en dessous l'autre */
+
+        .first{
+            display: flex; /* les éléments qui étaient l'un à côté de l'autre */
+        }
+    </style>
+    <div class="first">
+        <h2>Lorem, ipsum.</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <img src="https://via.placeholder.com/200x100" alt="">
+    </div>
+    <hr>
+    <style>
+        .second{
+            display: flex; 
+            /* TOUJOURS essayer d'aligner les éléments 
+            quitte à déborder de la taille d'écran */
+            flex-wrap: wrap; /* permet de faire un retour à la ligne si la ligne est remplie */
+        }
+    </style>
+    <div class="second">
+        <h2>une ligne trop remplie </h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <img src="https://via.placeholder.com/200x100" alt="">
+        <p>Lorem ipsum dolor sit.</p>
+        <p>Lorem ipsum dolor sit.</p>
+        <p>Lorem ipsum dolor sit.</p>
+        <p>Lorem ipsum dolor sit.</p>
+        <p>Lorem ipsum dolor sit.</p>
+        <p>Lorem ipsum dolor sit.</p>
+        <p>Lorem ipsum dolor sit.</p>
+        <p>Lorem ipsum dolor sit.</p>
+        <p>Lorem ipsum dolor sit.</p>
+        <p>Lorem ipsum dolor sit.</p>
+        <p>Lorem ipsum dolor sit.</p>
+        <p>Lorem ipsum dolor sit.</p>
+    </div>
+    <hr>
+    <style>
+        .third{
+            display: flex;
+            justify-content: space-between;
+            /*si on a pas rempli toute la ligne : reste de l'espace à droire 
+            prendre l'espace restant et le répartir de manière égale entre les différentes balises */
+        }
+    </style>
+    <div class="third">
+        <h2>une ligne peu élement</h2>
+        <img src="https://via.placeholder.com/100x50" alt="">
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+    <hr>
+    <style>
+        .menu{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap; /* pour avoir un retour à la ligne , il faut mettre un flex wrap !!!  */
+        }
+        @media screen and (min-width: 700px){
+            .menu li{
+                width:33.33%;
+            }
+        }
+    </style>
+    <ul class="menu">
+        <li>Lorem.</li>
+        <li>Natus?</li>
+        <li>Quam?</li>
+        <li>Culpa!</li>
+        <li>Maiores.</li>
+    </ul>
+    <hr>
+    <style>
+        .forth{
+            display: flex;
+            align-items: center;
+            /* permet d'aligner les éléments en hauteur */
+        }
+        .forth img{
+            margin-right: 10px;
+        }
+    </style>
+    <div class="forth">
+        <img src="https://via.placeholder.com/100x50" alt="">
+        <h3>titre du site </h3>
+        <p>Lorem ipsum dolor sit.</p>
+        <a href="">lire la suite </a>
+    </div>
+</body>
+</html>
