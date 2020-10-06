@@ -2,11 +2,16 @@
   border-radius: 5px;
   padding: 5px 10px;
   border: 1px solid black;
+  cursor: pointer;
+}
+
+.btn:hover, .btn-danger:hover, .btn-info:hover {
+  opacity: 0.5;
 }
 
 .btn-danger {
   color: white;
-  background: red;
+  background: #9b59b6;
 }
 
 .btn-info {

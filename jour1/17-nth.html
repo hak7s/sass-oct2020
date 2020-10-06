@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first li:nth-child(1){
+            color:red;
+        }
+
+        .second  p:nth-child(1){
+            color:blue; /* 
+            ne fonctionne pas il n'y a pas de p comme 1er enfant
+            p ne sert à css que a chercher le parent */
+        }
+
+        .second :nth-child(1){
+            color:greenyellow; /* => exemple utilisant de :nth-child sans balise
+            sélectionner le h2 */
+        }
+
+        .third p:nth-of-type(2){
+            color:royalblue;  /* exemple avec p:nth-of-type => c'est bon !! */
+        }
+
+        .forth .article:nth-child(1){
+            color: red /* ne fonctione pas car il y a un h2 comme 1er enfant */
+        }
+
+        .forth .article:nth-of-type(1){
+            color: yellowgreen ; /* 1er élément qui a la class .article sélectionné !! OK !!! */
+        }
+
+        .forth .special:nth-child(2){
+            color:goldenrod; /* rien ne se passe car le 2eme enfant .forth ne dispose pas de la class .special */
+        }
+
+        .forth .special:nth-of-type(2){
+            color:pink; /* rien ne se passe non plus car le 2eme enfant .forth ne dispose pas de la class .special, en fait il remplace .special par p .... nth-of-type et non nth-of-class */
+        }
+
+
+        /*https://stackoverflow.com/questions/10921809/css3-nth-of-type-restricted-to-class*/
+    </style>
+</head>
+<body>
+    <section class="first">
+        <h2>Un</h2>
+        <ul>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Aut, eaque tempore.</li>
+            <li>Est, explicabo magnam!</li>
+        </ul>
+    </section>
+    <hr>
+    <section class="second">
+        <h2>Deux</h2>
+        <p>Lorem, ipsum dolor.</p>
+        <p>Cupiditate, id doloribus?</p>
+        <p>Nostrum, eos assumenda.</p>
+        <p>Enim, ratione ut!</p>
+    </section>
+    <hr>
+    <section class="third">
+        <h2>Trois</h2>
+        <p>Lorem, ipsum dolor.</p>
+        <p>Cupiditate, id doloribus?</p>
+        <p>Nostrum, eos assumenda.</p>
+        <p>Enim, ratione ut!</p>
+    </section>
+    <hr>
+    <section class="forth">
+        <h2>Quatre</h2>
+        <p class="article">Lorem, ipsum dolor.</p>
+        <p class="article">Cupiditate, id doloribus?</p>
+        <p class="article special">Nostrum, eos assumenda.</p>
+        <p class="article special">Enim, ratione ut!</p>
+    </section>
+</body>
+</html>

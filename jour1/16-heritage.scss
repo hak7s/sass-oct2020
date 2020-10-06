@@ -6,6 +6,10 @@
     border-radius: 5px;
     padding: 5px 10px;
     border : 1px solid black;
+    cursor: pointer;
+    &:hover{ // en + de l'héritage + imbrication
+        opacity: 0.5;
+    }
 }
 
 // mais ce bouton en + des 3 règles 
@@ -14,7 +18,7 @@
 .btn-danger{
     @extend .btn;
     color : white;
-    background: red;
+    background: #9b59b6;
 }
 .btn-info{
     @extend .btn;

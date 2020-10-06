@@ -1,0 +1,91 @@
+<!-- 
+    exceptionnellement => juste faire du css 
+    pour se concentrer uniquement pour comprendre ce sélecteur css avancé
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /*normalement c'est mieux de mettre la balise style dans la balise head
+        mais ici c pour faciliter l'association html et css 
+        */
+        /*.first ul*/ li:nth-child(1){
+            background: red; /*ça sélectionne bien le 1er li / noter que dans le ul il n'y a QUE des li  */
+        }
+    </style>
+    <section class="first">
+        <h2>liste éléments identiques</h2>
+        <ul>
+            <li>Lorem, ipsum.</li>
+            <li>Laudantium, fugiat.</li>
+            <li>Error, et!</li>
+        </ul>
+    </section>
+    <style>
+        .second p:nth-child(1){
+            background: blue; /* ça ne marche pas ??? 
+            le sélecteur :nth-child :first-child :last-child 
+                p:nth-child(1) p la balise qui permet au sélecteur de chercher son parent => section => le 1er enfant 
+                h2 => ça ne marche 
+            */
+        }
+        .second  p:nth-child(2){
+            background: yellow;
+        }
+    </style>
+    <section class="second">
+        <h2>liste d'éléments divers </h2> <!-- 1 -->
+        <p>Lorem, ipsum dolor.</p> <!-- 2 -->
+        <hr> <!-- 3 -->
+        <p>Veniam, delectus officiis!</p> <!-- 4 -->
+        <p>Fugit, exercitationem natus?</p> <!-- 5 -->
+    </section>
+    <style>
+        /* à la place du sélecteur :nth-child() => :nth-of-type()*/
+        .third p:nth-of-type(1){
+            background: pink;
+        }
+
+        .third p:last-of-type{
+            background: gold;
+        }
+        /*nth-of-type fonctionne d'avec les tag des balises */
+    </style>
+    <section class="third">
+        <h2>liste d'éléments divers </h2> 
+        <p>Lorem, ipsum dolor.</p> <!-- 1 -->
+        <hr> 
+        <p>Veniam, delectus officiis!</p> <!-- 2 -->
+        <p>Fugit, exercitationem natus?</p> <!-- 3 -->
+    </section>
+    <style>
+        /* dans la section forth => sélectionner la dernière balise qui a la class speciale */
+        .forth .special:last-child{
+            background: green; /* KO => le :last-child est un p sans la class special */
+        }
+
+        .forth .special:last-of-type{
+            background: coral; /* KO */
+        }
+
+        .forth .special:nth-of-type(2){
+            background: cadetblue; /* travail mal => .special => p .... */
+        }
+
+        /* https://stackoverflow.com/questions/10921809/css3-nth-of-type-restricted-to-class */
+    </style>
+    <section class="forth">
+        <h2>Attention ne pas mettre de class comme sélecteur pour :nth-child ou :nth-of-type </h2> 
+        <p class="article">Lorem, ipsum dolor.</p> <!-- 1 -->
+        <hr> 
+        <p class="article special">Veniam, delectus officiis!</p> <!-- 2 -->
+        <p class="article special">Fugit, exercitationem natus?</p> <!-- 3 -->
+        <p class="article">Fugit, exercitationem natus?</p>
+    </section>
+</body>
+</html>
