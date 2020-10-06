@@ -1,0 +1,24 @@
+$tablette : "screen and (min-width:400px) and (max-width:800px)";
+$smartphone : "screen and (min-width:200px) and (max-width:400px)";
+.zone1{
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+    grid-gap: 20px;
+    @media #{ $tablette } {
+        grid-template-columns: repeat(4 , 1fr);
+    }
+    @media #{ $smartphone } {
+        grid-template-columns: repeat(3 , 1fr);
+    }
+}
+.zone2{
+    display: grid;
+    grid-template-columns: 200px 300px 1fr;
+    grid-gap: 10px;
+    @media #{ $tablette } {
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    @media #{ $smartphone } {
+        grid-template-columns: repeat(1 , 1fr);
+    }
+}
