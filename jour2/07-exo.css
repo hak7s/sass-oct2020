@@ -51,4 +51,19 @@
 }
 
 /* en css => propriété =>  content: " écrire du texte " */
+.p5 {
+  border: 1px solid green;
+  padding: 10px 20px;
+}
+
+.p5 {
+  -webkit-box-shadow: 10px 20px 10px red;
+          box-shadow: 10px 20px 10px red;
+}
+
+.p5 {
+  font-family: Arial;
+  font-size: 30px;
+  letter-spacing: 5px;
+}
 /*# sourceMappingURL=07-exo.css.map */

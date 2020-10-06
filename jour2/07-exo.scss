@@ -48,6 +48,41 @@
         content : "coucou ";
     }
 }
-
-
 /* en css => propriété =>  content: " écrire du texte " */
+
+// au lieu de créer un sélecteur 
+// sélecteur générique 
+%paragraphe {
+    // utilisé comme modèle de base 
+    border:1px solid green;
+    padding: 10px 20px;
+}
+
+.p5{
+    @extend %paragraphe;
+}
+
+// une balise peut recevoir plusieurs héritage en 
+// simultané
+
+%ombre{
+    box-shadow: 10px 20px 10px red;
+}
+
+%police{
+    font-family: Arial;
+    font-size:30px;
+    letter-spacing: 5px;
+}
+
+.p5{
+    // aucun problème pour avoir
+    // un sélecteur hérite de 
+    // plusieurs règles css 
+    @extend %ombre;
+    @extend %police ;
+}
+
+// bouton 
+// éléments qui vont un peu varier dans
+// les pages
