@@ -1,0 +1,26 @@
+// via flex box => centrer parfaitement un élément dans un autre 
+
+
+// _init.scss
+@import "_init";
+@include init-navigateur ;
+
+@mixin center( $height : 100vh){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: $height;
+}
+
+.container{
+    @include center ; // n'utilise la valeur par défaut de $height qui est 100vh
+    article{
+        width: 200px;
+        border: 1px solid black;
+        .more{
+            @include center ( 25px )  ; // n'utilise pas la valeur par défaut 
+            // $height qui est 100vh mais 25px 
+            border-top: 1px solid black;
+        }
+    }
+}

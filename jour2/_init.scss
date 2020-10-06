@@ -1,0 +1,13 @@
+@mixin init-navigateur {
+    body{
+        margin: 0; /* réinitialiser la marge par défaut */
+        font-family: sans-serif;// enlever empattement la police de caractère  
+    }
+    h1 , h2 , h3, h4 , h5, h6 {
+        margin: 0; /* réinitialiser la marge par défaut */
+    }
+    p{
+        margin: 0; /* réinitialiser la marge par défaut */
+    }
+    // enlevé les valeurs par défaut des balises
+}
