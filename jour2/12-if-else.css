@@ -1,0 +1,62 @@
+.grille {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.btn {
+  background: red;
+  color: black;
+}
+
+.menu {
+  display: none;
+}
+
+.btn {
+  background: blue;
+}
+
+.btn:hover {
+  background: #000099;
+}
+
+.btn2 {
+  background: rgba(255, 255, 0, 0.3);
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn2:hover {
+  background: rgba(153, 153, 0, 0.3);
+}
+
+.btn3 input {
+  display: none;
+}
+
+.btn3:active {
+  background: red;
+}
+
+.btn3 input:checked {
+  display: block;
+}
+
+.thumb {
+  border: 1px solid lightcyan;
+  padding: 5px;
+  background: white;
+}
+
+.thumb2 {
+  border: 1px solid lightcyan;
+  padding: 5px;
+  background: white;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=12-if-else.css.map */

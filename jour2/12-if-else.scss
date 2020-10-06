@@ -1,0 +1,119 @@
+// en plus des fonctions (mixin) et des variables 
+// il est possible de mettre en place de la logique dans vos fichiers sass
+// via @if @else
+
+$nb-colonne : 0 ;
+.grille{
+    display: grid;
+    
+    @if( $nb-colonne > 4){
+        grid-template-columns: repeat(5 , 1fr);
+    }
+    @if( $nb-colonne == 4 ){
+        grid-template-columns: repeat(4 , 1fr);
+    }
+    @if( $nb-colonne < 4 ){
+        grid-template-columns: repeat(3 , 1fr);
+    }
+    grid-gap:10px;
+}
+
+// en fonction de la couleur du fond du bouton
+// on change la couleur de la police de caractère
+
+$color : red;
+.btn{
+    background: $color;
+    @if($color == black){
+        color: white;
+    }
+    @else{
+        color: black;
+    }
+}
+
+// si l'élement à une largeur > 600px
+// alors il faut l'afficher
+// sinon il faut le masquer 
+
+$largeur : 400px ;
+
+.menu{
+    @if($largeur >= 600){
+        display: block;
+    }
+    @else{
+        display: none;
+    }
+}
+
+// fonction intégrée dans sass 
+
+$color-btn : blue;
+
+.btn{
+    background: $color-btn;
+    &:hover{
+        background: darken($color-btn , 20%);
+    }
+}
+
+// opacity($color-btn) =>  0 1
+// en fonction de l'opacité d'une couleur
+// => choisir si l'effet hover assombrir darken()
+// => choisir si l'effet hover eclaircir lighten()
+
+
+$color-btn: rgba(255, 255, 0, 0.3);
+
+.btn2{
+    background : $color-btn;
+    border:none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+
+    @if( opacity($color-btn) >= 0.5){
+        &:hover{
+            background: lighten($color-btn , 20%);
+        }
+    }
+    @else{
+        &:hover{
+            background: darken($color-btn , 20%);
+        }
+    }
+}
+
+.btn3{
+    input{
+        display: none;
+    }
+   
+    &:active{
+        background: red;
+    }
+
+    input:checked{
+        display: block;
+    }
+}
+
+// intéressant d'utiliser les @if et les @else dans des mixins
+
+@mixin miniature( $cercle : false ){
+    border: 1px solid lightcyan;
+    padding: 5px;
+    background: white;
+    @if( $cercle ){
+        border-radius : 50%;
+    }
+}
+
+.thumb{
+    @include miniature ;
+}
+
+.thumb2{
+    @include miniature(true) ;
+}
