@@ -1,0 +1,81 @@
+/*
+    menu est une grille de 5 colonnes
+    séparation de 10px
+    si on passe sur un écran de largeur 700px => grille devient une grille de 3 colonnes
+
+    le 1ère élement du menu
+    lorsque l'on passe la souris dessus => rouge (bonus : en 1 s)
+
+    le 2ème élement du menu
+    lorsque l'on passe la souris dessus => taille de police va grandir de 20%
+
+    le dernier élément du menu 
+    changer la couleur de fond dans la couleur voulue
+    changer la police dans la couleur voulue
+    (Bonus : les deux en .3s)
+*/
+
+$grand-ecran : "screen and (min-width:700px)";
+
+// pour mettre les li les un à côtés des autres 
+// display: flex
+// display: grid 
+ul{
+    display: grid ;
+    //grid-template-columns: 100px 100px 100px 100px 100px ; // grille à 5 colonnes
+    //grid-template-columns: repeat(5 , 100px) ; // raccourci pour écrire 5 fois 100px
+    //grid-template-columns: repeat(5 , 20%) ; // 20% du parent du ul => 
+    //margin-left: 20px;
+    grid-template-columns: repeat(5 , 1fr) ; // nouvel unité qui a été introduit avec le display grid 
+    grid-gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @media #{ $grand-ecran } {
+        grid-template-columns: repeat(3 , 1fr) ;
+    }
+
+    li{
+        /* margin:10px;
+        padding:10px; */
+        border:1px solid grey ;
+
+        &:first-child{ // l'effet se déclenche dans le li qui contient le a 
+            a{
+                // situation iniale
+                transition: color 3s;
+            }
+            &:hover a{
+                // situation finale
+                color: red;
+            }
+        }
+
+       /* &:first-child{ // Hasnaa / Joachim => l'effet se déclenche lorsque l'on passe la souris sur le a
+            a{
+                transition : color 3s;
+                &:hover{ 
+                    color : red
+                }
+            }       
+        }*/
+
+        &:nth-child(2){
+
+            &:hover a{ /* permet de lancer l'agrandissement dans le li et non sur le a */
+                // situation finale
+                font-size: 120%;
+            }
+        }
+        &:last-child{
+            a{
+                transition: background-color 0.3s , color 0.3s ;
+            }
+            &:hover a{ 
+                background-color: green;
+                color: white;
+            }
+        }
+    }
+}

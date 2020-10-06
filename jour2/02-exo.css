@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/*
+    menu est une grille de 5 colonnes
+    séparation de 10px
+    si on passe sur un écran de largeur 700px => grille devient une grille de 3 colonnes
+
+    le 1ère élement du menu
+    lorsque l'on passe la souris dessus => rouge (bonus : en 1 s)
+
+    le 2ème élement du menu
+    lorsque l'on passe la souris dessus => taille de police va grandir de 20%
+
+    le dernier élément du menu 
+    changer la couleur de fond dans la couleur voulue
+    changer la police dans la couleur voulue
+    (Bonus : les deux en .3s)
+*/
+ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media screen and (min-width: 700px) {
+  ul {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+ul li {
+  /* margin:10px;
+        padding:10px; */
+  border: 1px solid grey;
+  /* &:first-child{ // Hasnaa / Joachim => l'effet se déclenche lorsque l'on passe la souris sur le a
+            a{
+                transition : color 3s;
+                &:hover{ 
+                    color : red
+                }
+            }       
+        }*/
+}
+
+ul li:first-child a {
+  -webkit-transition: color 3s;
+  transition: color 3s;
+}
+
+ul li:first-child:hover a {
+  color: red;
+}
+
+ul li:nth-child(2):hover a {
+  /* permet de lancer l'agrandissement dans le li et non sur le a */
+  font-size: 120%;
+}
+
+ul li:last-child a {
+  -webkit-transition: background-color 0.3s , color 0.3s;
+  transition: background-color 0.3s , color 0.3s;
+}
+
+ul li:last-child:hover a {
+  background-color: green;
+  color: white;
+}
+/*# sourceMappingURL=02-exo.css.map */
