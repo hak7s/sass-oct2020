@@ -1,0 +1,53 @@
+/*
+.p1 contient 20 mots taille de police 15px / 
+    text shadow 2px 2px grey
+
+.p2 contient 20 mots hérite de p1
+    tout en majuscule
+
+.p3 contient 20 mots  hérite de p1
+    changer sa couleur de texte (votre choix) => vert 
+
+.p4 hérité de p2
+    souligner
+
+.p5 hérité de p4
+    largeur de 200px
+    centrer dans la page
+*/
+.p1{
+    font-size: 15px;
+    text-shadow : 2px 2px grey ;
+}
+.p2{
+    @extend .p1 ;
+    text-transform: uppercase;
+}
+.p3{
+    @extend .p1;
+    color: greenyellow;
+}
+
+.p4{
+    @extend .p2;
+    text-decoration: underline;
+}
+
+.p5{
+    @extend .p4;
+    width:200px;
+    /*p => élément en block*/
+    margin : 0 auto;
+    /*si l'élement est un élément en ligne => sélectionner 
+    le parent de l'élement et lui ajouter la règle
+    text-align: center */
+    &::after{
+        content : "bonjour les amis";
+    }
+    &::before{
+        content : "coucou ";
+    }
+}
+
+
+/* en css => propriété =>  content: " écrire du texte " */
