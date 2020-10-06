@@ -7,8 +7,23 @@ $smartphone : "screen and (min-width:200px) and (max-width:400px)";
     @media #{ $tablette } {
         grid-template-columns: repeat(4 , 1fr);
     }
+
+    p:last-child{
+        background-color: blue;
+        @media #{ $tablette , $smartphone } {
+            grid-column: 1/-1;
+        }
+    }
+    
     @media #{ $smartphone } {
         grid-template-columns: repeat(3 , 1fr);
+    }
+
+    p:nth-child(4){
+        background-color: green;
+        @media #{ $smartphone } {
+            grid-column: 1/-1;
+        }
     }
 }
 .zone2{
