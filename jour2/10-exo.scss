@@ -1,0 +1,32 @@
+body{
+    overflow: hidden;
+}
+.p1{
+    animation : apparition-droite 2s;
+}
+.p2{
+    animation : apparition-gauche 3s;
+}
+.p3{
+    animation : apparition-droite 5s;
+}
+.p4{
+    animation : apparition-gauche 7s;
+}
+.p5{
+    animation : apparition-droite 10s;
+}
+
+@mixin effet( $nom , $origin ){
+    @keyframes #{ $nom }{
+        from{
+            transform : translateX($origin)
+        }
+        to{
+            transform : translateX(0px)
+        }
+    }
+}
+
+@include effet ( apparition-droite , 1000px);
+@include effet ( apparition-gauche , -1000px);

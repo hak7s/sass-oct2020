@@ -1,0 +1,73 @@
+body {
+  overflow: hidden;
+}
+
+.p1 {
+  -webkit-animation: apparition-droite 2s;
+          animation: apparition-droite 2s;
+}
+
+.p2 {
+  -webkit-animation: apparition-gauche 3s;
+          animation: apparition-gauche 3s;
+}
+
+.p3 {
+  -webkit-animation: apparition-droite 5s;
+          animation: apparition-droite 5s;
+}
+
+.p4 {
+  -webkit-animation: apparition-gauche 7s;
+          animation: apparition-gauche 7s;
+}
+
+.p5 {
+  -webkit-animation: apparition-droite 10s;
+          animation: apparition-droite 10s;
+}
+
+@-webkit-keyframes apparition-droite {
+  from {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes apparition-droite {
+  from {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes apparition-gauche {
+  from {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes apparition-gauche {
+  from {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+/*# sourceMappingURL=10-exo.css.map */
