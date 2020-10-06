@@ -48,9 +48,43 @@
 @include apparition( apparition-gauche , -1000px );
 @include apparition( apparition-droite , 1000px );
 
-
-
 // animation en css 
 // transition => effet au moment
 // animation => 
 // je veux que le 1ère p qui dans .hello => apparaisse par la droite 
+
+.second img{
+    // transformation  => décaler les éléments
+    // axe horizontal => gauche à droite transform : translateX()
+    // axe vertical => haut en bas transform : translateY()
+    transform : translateX(-100px); // + => pousser vers la droite // - => pousser vers la gauche
+    animation : slide 5s ;
+}
+
+/*@keyframes slide{
+    // au départ ta position transform : translateX(-100px) 
+    from{
+        transform : translateX(-100px)
+    }
+    // au final => transform : translateX(0px) 
+    to{
+        transform : translateX(0px) 
+    }
+}*/
+
+@include apparition ( slide , -100px );
+
+// créer deux fichiers 10-exo.html et 10-exo.scss
+
+/*
+    dans le fichier html allez voir 5 paragraphes // les paragraphes sont les un en sous des autres
+    chaque paragraphe dispose d'une class différentes p1, p2 ... p5
+    
+    dans le fichier scss 
+    le 1er paragraphe va apparaitre par la droite en 2s
+    le 2ème paragraphe va apparaitre par la gauche en 3s
+    le 3ème paragraphe va apparaitre par la droite en 5s
+    le 4ème paragraphe va apparaitre par la gauche  en 7s
+    le 5ème paragraphe va apparaitre par la droite  en 10s
+    => utiliser les mixins avec paramètres pour éviter de vous répéter !!! 
+*/

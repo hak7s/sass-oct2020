@@ -80,4 +80,55 @@
             transform: translateX(0px);
   }
 }
+
+.second img {
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+  -webkit-animation: slide 5s;
+          animation: slide 5s;
+}
+
+/*@keyframes slide{
+    // au départ ta position transform : translateX(-100px) 
+    from{
+        transform : translateX(-100px)
+    }
+    // au final => transform : translateX(0px) 
+    to{
+        transform : translateX(0px) 
+    }
+}*/
+@-webkit-keyframes slide {
+  from {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+@keyframes slide {
+  from {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+/*
+    dans le fichier html allez voir 5 paragraphes // les paragraphes sont les un en sous des autres
+    chaque paragraphe dispose d'une class différentes p1, p2 ... p5
+    
+    dans le fichier scss 
+    le 1er paragraphe va apparaitre par la droite en 2s
+    le 2ème paragraphe va apparaitre par la gauche en 3s
+    le 3ème paragraphe va apparaitre par la droite en 5s
+    le 4ème paragraphe va apparaitre par la gauche  en 7s
+    le 5ème paragraphe va apparaitre par la droite  en 10s
+    => utiliser les mixins avec paramètres pour éviter de vous répéter !!! 
+*/
 /*# sourceMappingURL=09-exemple-mixin.css.map */
