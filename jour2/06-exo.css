@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .zone1 {
   display: -ms-grid;
   display: grid;
@@ -61,4 +62,27 @@
         grid-template-columns: repeat(1, 1fr);
   }
 }
+
+/* créer le fichier 07-exo.html et le fichier 07-exo.scss 
+
+@extend 
+
+.p1 contient 20 mots taille de police 15px / 
+    text shadow 2px 2px grey
+
+.p2 contient 20 mots hérite de p1
+    tout en majuscule
+
+.p3 contient 20 mots  hérite de p1
+    changer sa couleur de texte (votre choix) => vert 
+
+.p4 hérité de p2
+    souligner
+
+.p5 hérité de p4
+    largeur de 200px
+    centrer dans la page
+
+
+*/
 /*# sourceMappingURL=06-exo.css.map */
