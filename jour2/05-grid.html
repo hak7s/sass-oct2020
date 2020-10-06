@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /* par défaut => les p sont les uns en dessous des autres */
+        p{
+            border:1px solid black;
+        }
+        .first{
+            display: grid; /* par défaut les éléments sont les uns en dessous des autres */
+            grid-template-columns: 100px 200px ;
+            /* créer une grille de 2 colonnes 
+            la 1ère 100px de largeur et la 2ème 200px*/
+            grid-template-columns: 100px 100px 100px;
+            grid-template-columns: 100px 200px 100px 300px;
+            grid-template-columns: repeat( 5 , 100px);
+            /*espace entre les cellules de la grille */
+            grid-gap: 100px;
+        }
+    </style>
+    <section class="first">
+        <!--  7 p de 4 mots -->
+        <p>Lorem ipsum dolor sit.</p>
+        <p>Sit dolorem quo rerum.</p>
+        <p>Impedit odio officiis obcaecati.</p>
+        <p>Sapiente dicta culpa in?</p>
+        <p>Enim, quod. Aperiam, officia.</p>
+        <p>Totam laudantium accusamus quia.</p>
+        <p>Incidunt, sit. Tempora, reiciendis?</p>
+    </section>
+    <hr>
+    <style>
+        .second{
+            display: grid;
+            grid-template-columns: repeat(7 , 100px);
+           /* les cellules vont être centrée en hauteur*/
+            justify-content: space-between;/* prendre l'espace restant en largeur et le placer de manière identique entre les items de la grille => p */
+        }
+    </style>
+    <section class="second">
+        <p>Lorem ipsum dolor sit.</p>
+        <p>Sit dolorem quo rerum.</p>
+        <p>Impedit odio officiis obcaecati.</p>
+        <p>Sapiente dicta culpa in?</p>
+        <p>Enim, quod. Aperiam, officia.</p>
+        <p>Totam laudantium accusamus quia.</p>
+        <p>Incidunt, sit. Tempora, reiciendis?</p>
+    </section>
+
+    <style>
+        .third{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .third p{
+            margin-right: 10px;
+            width: calc( 100% / 7 - 10px );
+            /* flex imbriqué !*/
+            display: flex;
+            align-items: center;
+        }
+
+        .third p:last-child{
+            margin-right: 0;
+        }
+    </style>
+    <section class="third">
+        <p>Lorem ipsum dolor sit.</p>
+        <p>Sit dolorem quo rerum.</p>
+        <p>Impedit odio officiis obcaecati.</p>
+        <p>Sapiente dicta culpa in?</p>
+        <p>Enim, quod. Aperiam, officia.</p>
+        <p>Totam laudantium accusamus quia .Totam laudantium accusamus quia  Totam laudantium accusamus quia  Totam laudantium accusamus quia  Totam laudantium accusamus quia </p>
+        <p>Incidunt, sit. Tempora, reiciendis?</p>
+    </section>
+
+</body>
+</html>
