@@ -117,3 +117,29 @@ $color-btn: rgba(255, 255, 0, 0.3);
 .thumb2{
     @include miniature(true) ;
 }
+
+/*
+    créer les fichiers 13-exo.html et 13-exo.scss
+
+    dans le fichier html 
+        balise div ayant la class container qui contient le html suivant :
+            h2 avec 10 mots
+            3 paragraphes avec 30mots
+            3 images 300x200
+    dans le fichier scss vous allez réaliser les mises en forme suivantes :
+
+        1 center en largeur et en hauteur le contenu de la balise ayant la class container
+
+        2 créer une fonction qui va avoir 
+        nom mis-enforme-image
+            deux paramètres largeur et hauteur
+
+            si la largeur == hauteur = border-radius : 50%
+            sinon = border-radius : 5px
+
+        utiliser cette fonction sur la premier et la dernière image dans la balise .container
+
+        3/ faire apparaitre, par la droite, le premier p dans une animation en glissé => 2 s
+        4/ faire apparaitre, par la droite, le dernier p dans une animation en glissé => 5 s
+
+*/
