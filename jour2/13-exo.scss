@@ -1,0 +1,54 @@
+.container{
+    overflow: hidden; // pour éviter d'avoir l'effet de scroll de barre lors de l'animation des p 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 60px;
+}
+
+@mixin mis-enforme-image ($largeur , $hauteur){
+    border:1px solid yellowgreen;
+    @if($largeur == $hauteur){
+        border-radius: 50%;
+    }
+    @else{
+        border-radius: 5px;
+    }
+}
+// dans la balise container => on a des p h2 et des img 
+// ne pas utiliser nth-child
+// => nth-of-type
+
+.container img{
+    &:first-of-type{
+        @include mis-enforme-image (300 , 200);
+    }
+    &:last-of-type{
+        @include mis-enforme-image (300 , 200);
+    }
+}
+
+@mixin slide ($nom-animation , $origin) {
+    @keyframes #{ $nom-animation } {
+        from{
+            transform: translateX( $origin );
+        }
+        to{
+            transform: translateX(0px);
+        }
+    }
+}
+
+.container p{
+    &:first-of-type{
+        animation: from-right 2s;
+    }
+    &:last-of-type{
+        animation: from-left 2s;
+    }
+}
+
+@include slide ( from-right , 1000px);
+@include slide ( from-left , -1000px);
