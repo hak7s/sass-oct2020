@@ -47,4 +47,49 @@
 .p4:hover {
   color: #e0e0e0;
 }
+
+.p5 {
+  color: blue;
+  -webkit-transition: color 3s;
+  transition: color 3s;
+}
+
+.p5:hover {
+  color: white;
+}
+
+.p6 {
+  color: coral;
+  -webkit-transition: color 3s;
+  transition: color 3s;
+}
+
+.p6:hover {
+  color: white;
+}
+
+/*
+    dans le fichier 10-exo.html 
+
+    button => créer 4 => class 
+    btn-primary 
+    btn-secondary
+    btn-success
+    btn-alert
+
+    dans le fichier 10-exo.scss
+
+    pour les boutons qui auront la class qui fini par primary 
+        fond bleu / text blanc 
+    secondary
+        fond gris / text blanc 
+    success 
+        fond vert / text noir
+    alert
+        fond vert / text blanc
+
+    au passer de tous ces boutons
+        eclaircir de 30 % leur couleur de fond en 2 secondes
+        + tous ces boutons auront un border radius de 5px
+*/
 /*# sourceMappingURL=09-fonction-couleurs.css.map */

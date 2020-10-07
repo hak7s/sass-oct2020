@@ -44,3 +44,50 @@
         color : grayscale(pink);
     }
 }
+
+// maintenant que l'on connait les boucles 
+
+$paragraphes : (
+    5  : blue,
+    6 : coral
+);
+
+@each $index , $couleur in $paragraphes{
+    .p#{ $index }{
+        color : $couleur ;
+        transition: color 3s ;
+        &:hover{
+            color : lighten($couleur , 50%);
+        }
+    }
+}
+
+// notre mini bootstrap 
+
+
+// créer les fichiers 10-exo.html et 10-exo.scss
+
+/*
+    dans le fichier 10-exo.html 
+
+    button => créer 4 => class 
+    btn-primary 
+    btn-secondary
+    btn-success
+    btn-alert
+
+    dans le fichier 10-exo.scss
+
+    pour les boutons qui auront la class qui fini par primary 
+        fond bleu / text blanc 
+    secondary
+        fond gris / text blanc 
+    success 
+        fond vert / text noir
+    alert
+        fond vert / text blanc
+
+    au passer de tous ces boutons
+        eclaircir de 30 % leur couleur de fond en 2 secondes
+        + tous ces boutons auront un border radius de 5px
+*/
