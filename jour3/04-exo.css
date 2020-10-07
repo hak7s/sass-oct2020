@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .h1 {
   font-size: 25rem;
 }
@@ -17,4 +18,98 @@
 .h5 {
   font-size: 5rem;
 }
+
+p {
+  color: red;
+}
+
+p-red {
+  color: red;
+}
+
+p-blue {
+  color: blue;
+}
+
+p-yellow {
+  color: yellow;
+}
+
+p-green {
+  color: green;
+}
+
+li {
+  color: purple;
+}
+
+li-pink {
+  border-bottom: 1px solid pink;
+}
+
+li-purple {
+  border-bottom: 1px solid purple;
+}
+
+li-lightblue {
+  border-bottom: 1px solid lightblue;
+}
+
+li-lightgreen {
+  border-bottom: 1px solid lightgreen;
+}
+
+.border-success {
+  border: 1px solid green;
+}
+
+.text-primary {
+  color: blue;
+}
+
+.text-secondary {
+  color: grey;
+}
+
+.text-dark {
+  color: black;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-success {
+  color: green;
+}
+
+/*
+écrire du sass pour générer le code suivant 
+
+en utilisant le système de boucle et les variables complexes
+réaliser ce css :
+
+.row-cols-auto > * {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+.row-cols-1 > * {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.row-cols-2 > * {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.row-cols-3 > * {
+  flex: 0 0 auto;
+  width: 33.333333%;
+}
+
+
+
+*/
 /*# sourceMappingURL=04-exo.css.map */

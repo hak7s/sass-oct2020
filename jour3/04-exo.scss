@@ -34,3 +34,100 @@ $variable4 : (
 $palette : #794c74 #c56183 #fadcaa #b2deec ;
 
 // la fonction @each() permettre de parcourir ce genre de variable 
+// rdv 10h45 bon café
+// hello hello
+
+
+// partir de la liste 
+
+// variables  => list
+$couleurs-primaire : red blue yellow green ;
+
+p{
+    color : nth( $couleurs-primaire , 1) ;
+    // fonction intégrée de sass => nth( $var , indice_from_1) ;
+}
+
+@for $i from 1 through 4{
+    p-#{ nth( $couleurs-primaire , $i  )}{
+        color : nth( $couleurs-primaire , $i  );
+    }
+}
+
+
+// tableau 
+$couleurs-clairs : pink , purple , lightblue , lightgreen;
+
+// sélectionner 1 couleur purple
+// nth( ) => list ou pour des tableaux fonctionne de la même manière
+li{
+    color : nth($couleurs-clairs , 2);
+}
+
+@each $couleur in $couleurs-clairs {
+    li-#{ $couleur }{
+        border-bottom : 1px solid $couleur ;
+    }
+}
+
+// tableau associatif == objet 
+
+$couleur-bootstrap : ( 
+    primary : blue,
+    secondary : grey,
+    dark : black,
+    white : white ,
+    success : green
+);
+
+// récupérer 1 valeur particulière dans la variable
+
+.border-success{
+    border : 1px solid nth(nth($couleur-bootstrap , 5 ) , 2);
+   // color  : $couleur-bootstrap.white
+}
+
+// parcourir le tableau 
+@each  $index  , $valeur in $couleur-bootstrap{
+    .text-#{ $index } {
+        color : $valeur ;
+    }
+}
+
+// => lorsque l'on veut 
+// si tu veux créer une librairie css perso == bootstrap 
+// Bootstrap => utilisent SASS 
+
+// créer un nouveau fichier 05-exo.scss 
+/*
+écrire du sass pour générer le code suivant 
+
+en utilisant le système de boucle et les variables complexes
+réaliser ce css :
+
+.row-cols-auto > * {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+.row-cols-1 > * {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.row-cols-2 > * {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.row-cols-3 > * {
+  flex: 0 0 auto;
+  width: 33.333333%;
+}
+
+
+
+*/
+
+
+
