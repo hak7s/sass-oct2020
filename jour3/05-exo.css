@@ -1,0 +1,86 @@
+@charset "UTF-8";
+.row-cols-auto > * {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: auto;
+}
+
+.row-cols-1 > * {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 100%;
+}
+
+.row-cols-2 > * {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 50%;
+}
+
+.row-cols-3 > * {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 33.33333%;
+}
+
+/* autre manière */
+.row-cols-auto > * {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.row-cols-1 > * {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 100%;
+}
+
+.row-cols-2 > * {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 50%;
+}
+
+.row-cols-3 > * {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 33.33333%;
+}
+
+/*
+générer le code css suivant : 
+
+.g-3,
+.gx-3 {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.g-3,
+.gy-3 {
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+}
+
+.g-4,
+.gx-4 {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.g-4,
+.gy-4 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+*/
+/*# sourceMappingURL=05-exo.css.map */

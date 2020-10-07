@@ -1,0 +1,59 @@
+$dimensions : ( 
+    auto : auto ,
+    1    : 100% ,
+    2    : 50% ,
+    3    : 33.33333%
+);
+
+@each $index , $valeur  in  $dimensions{
+    .row-cols-#{ $index } > * {
+        flex: 0 0 auto;
+        width: $valeur ;
+    }
+}
+
+/* autre manière */
+$dimensions2 : auto , 1 , 2 , 3 ;
+
+@each $index , $valeur  in  $dimensions2{
+    .row-cols-#{ $index } > * {
+        flex: 0 0 auto;
+        @if($index == auto ){
+            width: $valeur ;
+        }
+        @else{
+            width: (100 / $index)+%  ;
+        }
+    }
+}
+
+// créer un noueau fichier scss 06-exo.scss
+
+/*
+générer le code css suivant : 
+
+.g-3,
+.gx-3 {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.g-3,
+.gy-3 {
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+}
+
+.g-4,
+.gx-4 {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.g-4,
+.gy-4 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+*/
