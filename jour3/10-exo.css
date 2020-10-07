@@ -1,0 +1,74 @@
+/*
+    pour les boutons qui auront la class qui fini par primary 
+        fond bleu / text blanc 
+    secondary
+        fond gris / text blanc 
+    success 
+        fond vert / text noir
+    alert
+        fond vert / text blanc
+
+    au passer de tous ces boutons
+        eclaircir de 30 % leur couleur de fond en 2 secondes
+        + tous ces boutons auront un border radius de 5px
+*/
+.btn-primary {
+  background: blue;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 2.5px 8px;
+  cursor: pointer;
+  -webkit-transition: background 2000ms;
+  transition: background 2000ms;
+}
+
+.btn-primary:hover {
+  background: #9999ff;
+}
+
+.btn-secondary {
+  background: grey;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 2.5px 8px;
+  cursor: pointer;
+  -webkit-transition: background 2000ms;
+  transition: background 2000ms;
+}
+
+.btn-secondary:hover {
+  background: #cdcdcd;
+}
+
+.btn-success {
+  background: #28df99;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 2.5px 8px;
+  cursor: pointer;
+  -webkit-transition: background 2000ms;
+  transition: background 2000ms;
+}
+
+.btn-success:hover {
+  background: #adf3d8;
+}
+
+.btn-alert {
+  background: red;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 2.5px 8px;
+  cursor: pointer;
+  -webkit-transition: background 2000ms;
+  transition: background 2000ms;
+}
+
+.btn-alert:hover {
+  background: #ff9999;
+}
+/*# sourceMappingURL=10-exo.css.map */

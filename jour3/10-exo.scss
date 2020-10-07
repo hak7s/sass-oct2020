@@ -1,0 +1,35 @@
+/*
+    pour les boutons qui auront la class qui fini par primary 
+        fond bleu / text blanc 
+    secondary
+        fond gris / text blanc 
+    success 
+        fond vert / text noir
+    alert
+        fond vert / text blanc
+
+    au passer de tous ces boutons
+        eclaircir de 30 % leur couleur de fond en 2 secondes
+        + tous ces boutons auront un border radius de 5px
+*/
+$couleurs : (
+    primary : blue white ,
+    secondary : grey  white ,
+    success : #28df99 white ,
+    alert : red white
+);
+
+@each $nom , $colors in  $couleurs{
+    .btn-#{ $nom }{
+        background: nth($colors , 1);
+        color : nth($colors , 2);
+        border-radius: 5px;
+        border: none;
+        padding: 2.5px 8px;
+        cursor: pointer;
+        transition : background 2000ms ;
+        &:hover{
+            background: lighten( nth($colors , 1) , 30%);
+        }
+    }
+}
