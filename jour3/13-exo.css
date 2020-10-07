@@ -30,6 +30,13 @@ header nav {
           align-items: center;
 }
 
+header nav .logo {
+  margin: 0;
+  margin-right: 60px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
 header nav .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -59,12 +66,6 @@ header nav .sous-menu {
 header nav .sous-menu > li {
   padding: 10px 20px;
   background: #343a40;
-}
-
-header nav .logo {
-  margin-right: 60px;
-  font-size: 1.1rem;
-  text-transform: uppercase;
 }
 
 header nav form {

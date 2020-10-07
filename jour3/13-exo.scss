@@ -29,6 +29,12 @@ header{
         padding : $m / 2 $m ;
         display: flex;
         align-items: center;
+        .logo{
+            margin:0;
+            margin-right: $m * 3;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+        }
         .menu{
             display: flex;
             @extend %ul;
@@ -54,11 +60,7 @@ header{
                 background: $noir;
             }
         }
-        .logo{
-            margin-right: $m * 3;
-            font-size: 1.1rem;
-            text-transform: uppercase;
-        }
+       
         form{
             margin-left: auto; // règle avec flex box
             input[type="text"]{
