@@ -1,0 +1,60 @@
+/*
+pour la balise class container => centrer dans la page // 960px 
+        si la taille de l'écran atteint 960px => cette balise à une largeur de 100% de la taille de l'écran - une marge de 10px à gauche et à droite
+
+créer (en utilisant des boucles) => le système de grille décrit ci dessus 
+    => flex box // display grid 
+*/
+
+$largeur-design : 960px;
+$m : 10px ;
+$col-max : 12 ;
+
+.container{
+    width: $largeur-design;
+    margin:0 auto;
+    @media screen and (max-width: #{$largeur-design} ){
+        width: calc( 100% - 20px );
+        margin:0 $m;
+    }
+}
+
+div{
+    border:1px solid black;
+}
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+// display grid => 1ère solution possible
+//.ligne{ // balise parent des cellules 
+//    display: grid; 
+//    // les enfants direct de cette balise vont avoir une comportement de grille
+//    grid-template-columns: repeat($col-max , 1fr);
+ //   // la grille va avoir 12 colonnes 
+//    grid-gap: $m ;
+//    // entre chaque cellule de la grille mettre une marge de 10px 
+ //   margin-bottom: $m;
+    // en dessous de la grille tu me mets
+//}
+
+//@for $i from 1 through 12{
+ //   .col-#{ $i }{
+//        grid-column: span $i; // grâce à display grid => pas besoin de s'embêter avec % 
+//    }
+//}
+
+// display flex => 2ème solution possible
+
+.ligne{
+    display: flex;
+    margin-bottom: $m;
+}
+
+@for $i from 1 through 12{
+    .col-#{ $i }{
+        flex-basis: ($i / 12 * 100)+%; 
+        // à la place d'utiliser width => flex-basis 
+    }
+}
