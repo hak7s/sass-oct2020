@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
     pour les boutons qui auront la class qui fini par primary 
         fond bleu / text blanc 
@@ -71,4 +72,32 @@
 .btn-alert:hover {
   background: #ff9999;
 }
+
+/*
+    dans le fichier 11-exo.html
+
+    div class container  (qui contient tout notre code html dans la balise body)
+        header class ligne
+            div class col-2 => 2/12 eme de la largeur totale du parent
+                un p qui contient 2 mots 
+            div class col-10 => 10/12 eme de la largeur totale du parent 
+                un p qui contient 20 mots 
+        
+        section class ligne
+            div class col-6 => 6/12 eme de la largeur totale du parent
+                une grande image 400x300
+            div class col-4 => 4/12 eme de la largeur totale du parent
+                un p qui contient 20 mots 
+            div class col-2 => 2/12 eme de la largeur totale du parent
+                un p qui contient 10 mots 
+
+    dans le fichier scss => réaliser les mis en page suivantes 
+
+        pour la balise class container => centrer dans la page // 960px 
+        si la taille de l'écran atteint 960px => cette balise à une largeur de 100% de la taille de l'écran - une marge de 10px à gauche et à droite
+
+        créer (en utilisant des boucles) => le système de grille décrit ci dessus 
+            => flex box // display grid 
+
+*/
 /*# sourceMappingURL=10-exo.css.map */
