@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+header nav .menu, header nav .sous-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header nav form input[type="text"], header nav form input[type="submit"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+header {
+  color: white;
+}
+
+header nav {
+  background: #343a40;
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav .menu > li {
+  margin-right: 60px;
+  color: #869c88;
+  cursor: pointer;
+  position: relative;
+}
+
+header nav .menu .actif {
+  color: white;
+}
+
+header nav .menu > li:hover .sous-menu {
+  display: block;
+}
+
+header nav .sous-menu {
+  position: absolute;
+  display: none;
+}
+
+header nav .sous-menu > li {
+  padding: 10px 20px;
+  background: #343a40;
+}
+
+header nav .logo {
+  margin-right: 60px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+header nav form {
+  margin-left: auto;
+}
+
+header nav form input[type="submit"] {
+  border: 1px solid #28a745;
+  color: #28a745;
+  background: none;
+  cursor: pointer;
+  -webkit-transition: background 2s , color 2s;
+  transition: background 2s , color 2s;
+}
+
+header nav form input[type="submit"]:hover {
+  background: #28a745;
+  color: white;
+}
+
+.p {
+  background: blue;
+  color: black;
+  position: relative;
+}
+
+.p h1:hover + p {
+  display: block;
+}
+
+.p p {
+  display: none;
+  position: absolute;
+}
+/*# sourceMappingURL=13-exo.css.map */
