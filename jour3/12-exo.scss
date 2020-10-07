@@ -1,0 +1,47 @@
+$nb-col : 12;
+$width-container : 960px ;
+$m : 10px ;
+
+.container{
+    width: $width-container;
+    margin: 0 auto;
+    @media screen and (max-width: #{ $width-container }){
+        width: calc( 100% - 20px)  ;
+        margin: 0 $m;
+    }
+}
+
+.ligne{
+    display: grid;
+    grid-template-columns: repeat( $nb-col , 1fr );
+    grid-gap: $m ;
+}
+
+.col-2{
+    grid-column: span 2;
+}
+
+.col-10{
+    grid-column: span 10;
+}
+%menu-style{
+    list-style: none;
+    margin: 0;
+    padding: $m * 2 0;
+}
+.menu {
+    display: flex;
+    @extend %menu-style;
+    & > li{
+        margin-right: $m * 4 ;
+        cursor: pointer;
+        border:1px solid grey;
+        &:hover .sous-menu{
+            display: block;
+        }
+    }
+    .sous-menu{
+        display: none;
+        @extend %menu-style;
+    }
+}
