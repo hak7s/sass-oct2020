@@ -93,4 +93,32 @@ div {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
 }
+
+/*
+// div container qui contient l'intégralité du design 
+        .ligne
+            div class col-2
+                image 70x70
+            div class col-10
+                <ul> 
+                    <li> Accueil</li>
+                    <li>Présentation</li>
+                    <li>Blog  
+                        <ul class="sous-menu">
+                            <li>catégorie 1</li>
+                            <li>catégorie 2</li>
+                            <li>catégorie 3</li>
+                            <li>catégorie 3</li>
+                        </ul>
+                    </li>
+                </ul>
+
+    dans le fichier scss 
+       1 créer le système de grille 
+       2 par défaut le sous menu est masqué // si je passe la souris sur son élément parent
+       le sous menu apparait 
+       display= block // none
+       3 les éléments du menu <li> remplissent de manière régulière la balise parent <ul> 
+
+*/
 /*# sourceMappingURL=11-exo.css.map */
