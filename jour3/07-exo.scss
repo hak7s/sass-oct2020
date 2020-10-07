@@ -1,0 +1,38 @@
+$padding : (
+    0 : 0 ,
+    1 : 0.25rem ,
+    2 : 0.5rem ,
+    3 : 1rem ,
+    4 : 1.5rem ,
+    5 : 3rem
+);
+
+@each  $index , $valeur in  $padding{
+    .pt-#{ $index } {
+        padding-top: $valeur !important;
+    }
+}
+
+h1{
+    padding:nth(nth($padding , 4) , 2);
+}
+
+/* autre solution */
+
+
+@for $i from 0 through 5{
+    .pt-#{ $i }{
+        @if($i == 3){
+            padding-top: 1rem !important;
+        }
+        @else if($i == 4){
+            padding-top: 1.5rem !important;
+        }
+        @else if($i == 5){
+            padding-top: 3rem !important;
+        }
+        @else{
+            padding-top: ( $i * 1/4)+rem !important;
+        }
+    }
+}
