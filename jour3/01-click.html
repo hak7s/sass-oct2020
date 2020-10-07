@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .el1{
+            display: none;
+        }
+        .el1:checked+label{
+            background: chartreuse;
+        }
+        .btn1{
+            cursor: pointer;
+        }
+
+        label ~ .el2:checked  {
+            background: peru;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Toujours avoir le input checkbox AVANT le label !</h2>
+    <input type="checkbox" id="click1" class="el1">
+    <label for="click1" class="btn1">bouton</label>
+    <hr>
+    <label for="click2" class="btn2">bouton</label>
+    <input type="checkbox" id="click2" class="el2">
+</body>
+</html>
