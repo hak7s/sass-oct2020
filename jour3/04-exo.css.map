@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACI,AAAA,GAAG,CAAM;EACL,SAAS,EAAI,KAAiB;CACjC;;AAFD,AAAA,GAAG,CAAM;EACL,SAAS,EAAI,KAAiB;CACjC;;AAFD,AAAA,GAAG,CAAM;EACL,SAAS,EAAI,KAAiB;CACjC;;AAFD,AAAA,GAAG,CAAM;EACL,SAAS,EAAI,KAAiB;CACjC;;AAFD,AAAA,GAAG,CAAM;EACL,SAAS,EAAI,IAAiB;CACjC",
+    "sources": [
+        "04-exo.scss"
+    ],
+    "names": [],
+    "file": "04-exo.css"
+}

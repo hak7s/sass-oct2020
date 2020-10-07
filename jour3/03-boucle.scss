@@ -1,0 +1,42 @@
+// vous pouvez utiliser des boucles en sass 
+
+// plusieurs syntaxes possibles 
+// ressemble à une boucle for 
+
+// à chaque tour de boucle $i augmente de +1
+@for $i from 0 through 10{
+    .m-#{ $i }{
+        margin: $i+px ;
+        // concaténation 
+    }
+
+    .py-#{ $i }{
+        padding: ($i * 10)+px 0 ;
+    }
+}
+
+// cas pratique créer le fichier 04-exo.scss
+
+// réaliser une boucle en sass pour générer le css suivant :
+/*
+    .h1{
+        font-size : 25rem ;
+    }
+
+    .h2{
+        font-size : 20rem;
+    }
+
+    .h3{
+        font-size : 15rem;
+    }
+
+    .h4{
+        font-size : 10rem;
+    }
+
+    .h5{
+        font-size : 5rem;
+    }
+*/
+

@@ -1,0 +1,36 @@
+@for $i from 1 through 5{
+    .h#{ $i }{
+        font-size :  (30 - 5 * $i)+rem ;
+    }
+}
+
+
+// l'autre type de boucle que l'on va voir ensemble 
+// @each() => grâce à ce mot clé on va pouvoir réaliser 
+// opérations avancées
+
+// variables  => list
+$variable1 : red blue yellow green ;
+
+// les valeurs de la variables sont séparés par des virgules
+// tableau en sass 
+$variable2 : pink , purple , lightblue , lightgreen;
+
+// tableau associatif commence et finit par parenthèses
+//  etiquette : la ou les valeurs
+$variable3 : ( 
+    "menu" : yellowgreen,
+    "main" : darkred ,
+    footer : coral
+);
+
+// tableau associatif qui contient des listes 
+$variable4 : ( 
+    "menu" : red blue yellow green  ,
+    "main" : darkred ,
+    footer : coral
+);
+// https://colorhunt.co/
+$palette : #794c74 #c56183 #fadcaa #b2deec ;
+
+// la fonction @each() permettre de parcourir ce genre de variable 
