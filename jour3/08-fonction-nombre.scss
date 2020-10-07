@@ -1,0 +1,61 @@
+// Build in => fonction intégrée dans sass 
+// fonction mathématique 
+
+$chiffre1 : 7 ;
+$chiffre2 : 3 ;
+
+p{
+    font-size: ($chiffre1 / $chiffre2)+px ;
+}
+
+// arrondi en bas
+// floor => sol
+p{
+    font-size: floor($chiffre1 / $chiffre2)+px ;
+}
+
+// arrondi en haut
+// ceiling = plafond 
+p{
+    font-size: ceil($chiffre1 / $chiffre2)+px ;
+}
+
+// manipuler simultanémenent des valeurs 
+// px et % 
+
+// et le parent dispose d'une largeur de 200px
+p{
+    width : calc( 100% - 20px ); // 180px
+}
+// Error: Incompatible units: 'px' and '%'.
+
+// par contre si vous avez les même unités dans le calcul
+// pas de soucis 
+
+// largeur du parent (200px - 20px) = 180px 
+
+// chiffre aléatoire
+
+p {
+    font-size: random( 100 )+px;
+}
+
+$list : 2, 3, 10, 1, 4 ;
+
+p{
+    font-size: min( 2, 3, 10, 1, 4 )+px;
+}
+
+p{
+    font-size: max( 2, 3, 10, 1, 4 )+px;
+}
+
+// des questions ??? 
+// bon appétit => fin sass 
+// comment est fait bootstrap 
+// rdv 13h34 , bon appétit !!!!!
+// qcm => vendredi fin d'après midi !
+
+// des questions ??? 
+// => les fonctions 
+// 09-fonction-couleurs.scss

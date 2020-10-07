@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/*
+    lighten($color,$percent) : éclaircir une couleur
+    darken($color,$percent) : assombrir une couleur
+    rgba($color,$nb) : ajouter / enlever de l'alpha sur une $color | $nb entre 0 et 1
+    // ajouter enlever de l'opacité à une couleur
+    grayscale($color) : arrondit à l'entier supérieur => nuance de gris 
+
+    09-couleurs.html
+*/
+.p1 {
+  color: yellowgreen;
+}
+
+.p1:hover {
+  color: #5c7b1e;
+}
+
+.p2 {
+  color: blueviolet;
+  -webkit-transition: color 2s;
+  transition: color 2s;
+}
+
+.p2:hover {
+  color: #bc85ee;
+}
+
+.p3 {
+  color: cornflowerblue;
+  background: cornsilk;
+  -webkit-transition: color 3s , background 3s;
+  transition: color 3s , background 3s;
+}
+
+.p3:hover {
+  color: rgba(100, 149, 237, 0.2);
+  background: #ffcf10;
+}
+
+.p4 {
+  color: pink;
+  -webkit-transition: color 4s;
+  transition: color 4s;
+}
+
+.p4:hover {
+  color: #e0e0e0;
+}
+/*# sourceMappingURL=09-fonction-couleurs.css.map */

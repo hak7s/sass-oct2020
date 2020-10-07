@@ -1,0 +1,46 @@
+// des fonctions de couleurs :
+
+/*
+    lighten($color,$percent) : éclaircir une couleur
+    darken($color,$percent) : assombrir une couleur
+    rgba($color,$nb) : ajouter / enlever de l'alpha sur une $color | $nb entre 0 et 1
+    // ajouter enlever de l'opacité à une couleur
+    grayscale($color) : arrondit à l'entier supérieur => nuance de gris 
+
+    09-couleurs.html
+*/
+
+.p1{
+    color : yellowgreen;
+    &:hover{
+        // assombrir de 20%
+        color : darken( yellowgreen , 20% );
+    }
+}
+
+.p2{
+    color : blueviolet;
+    transition: color 2s;
+    &:hover{
+        color : lighten( blueviolet, 20% );
+    }
+}
+
+// changer l'opacité d'une couleur !
+.p3{
+    color: cornflowerblue;
+    background: cornsilk;
+    transition: color 3s , background 3s;
+    &:hover{
+        color : rgba( cornflowerblue , 0.2 );
+        background:darken( cornsilk , 40%);
+    }
+}
+// grayscale => donner une nuance de gris la plus proche de la couleur sélectionnée
+.p4{
+    color : pink;
+    transition: color 4s ;
+    &:hover{
+        color : grayscale(pink);
+    }
+}
