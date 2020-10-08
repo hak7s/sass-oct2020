@@ -7,7 +7,7 @@ $gris-fonce : #817d7e;
 // astuce même le noir et le blanc comme variable 
 $m : 20px ;
 
-@import "_01_default" ;
+@import "_01_default" ; // module
 
 @import "_01_grille" ;
 
@@ -15,3 +15,8 @@ $m : 20px ;
 
 @import "_01_aside";
 
+// des questions sur ce que l'a vu de matin ??
+// objectif => organiser son code css en modules 
+// le rendre réutilisable (potentiellement)
+
+// dans le dossier jour4 => créer deux fichiers  02-map.html + 02-map.scss

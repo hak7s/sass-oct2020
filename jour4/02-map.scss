@@ -1,0 +1,163 @@
+// créer deux variables 
+$color : red ;
+$size : 20px;
+
+// fonction mixin 
+
+@mixin mis-en-forme-titre( $color , $size ){
+    color : $color ;
+    font-size : $size ;
+}
+
+h1{
+    @include mis-en-forme-titre($color , $size );
+    text-align: center;
+}
+
+// sass => css 
+// remarqué => à la fin du fichier css 
+// ligne qui est commentée
+// /*# sourceMappingURL=02-map.css.map */
+
+// en + il y a un fichier .map qui est créé automatiquement
+// .map ?? => 
+// tableau en format JSON => le fichier scss => sources
+// on prend le 01-exo.scss
+
+// mappings est plus important
+// sources => la liste le nom du fichier compilé + tous les fichiers
+// importé 
+
+// permettre aux navigateurs FireFox / Chrome ...
+// donner une information au développeur sur Où les règles on été généré dans les fichiers scss
+
+// les navigateurs ne se pas capable de lire un fichier sass / scss
+
+// mais !! via le fichier .map + commentaire => le code css a été généré
+
+// Firefox // Chrome 
+
+// => confirmer scss par défaut 
+// scss le fichier source => compiler en css 
+// OU ce css est généré ??? 
+
+// il est possible de 
+// version minifié de fichier css ??? 
+
+// exemple => bootstrap => getbootstrap.com
+// https://getbootstrap.com/docs/4.5/getting-started/introduction/
+
+// https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css
+// https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.css
+// minifiée <=> version dans laquelle on a enlevé => espace et saut de lignes
+
+// pourquoi minifier le css => gagner du poids 
+// poids sur le fichier 
+// ordinateur => pas de soucis avec sans saut de ligne => comprendre 
+// humain => minimun de saut de ligne => illisible 
+
+// vu que le fichier appelé des millions de fois sur internet 
+// permettre d'alléger la charge de travail du réseau 
+
+// nous pouvons nous version minifié de notre fichier css final 
+
+// ligne de commande : 
+// menu > terminal 
+
+// permettre d'exécuter des programmes de manière textuelle 
+// utiliser la souris pour ouvrir un dossier ou un fichier 
+// pour compiler notre fichier 02-map.scss => logiciel en ligne de commande
+
+// aller sur le site officiel de sass => https://sass-lang.com/ > Install >
+
+// la solution en ligne (gratuite)
+// lien github > https://github.com/sass/dart-sass/releases/tag/1.27.0
+
+// téléchargé un zip => dézipper => récupérer le dossier dart-sass collé dans le dossier jour4
+// le fameux logiciel qui va me permettre d'executer la compilation en ligne de commande 
+
+//si vous êtes des utilisateurs de Windows  
+// .\\jour4\\dart-sass\\sass.bat Enter
+
+// si vous ête des utilisateurs de MacOS
+// ./jour4/dart-sass/sass Enter
+
+// si vous ête des utilisateurs de Linux (Ubuntu)
+// ./jour4/dart-sass/sass Enter
+
+// équivalent du plugin Watch Sass 
+
+// => plus de chose par exemple => fichier notre fichier minifié 
+
+// logiciel  (=binaire) options drapeau 
+// .\\jour4\\dart-sass\\sass.bat --help
+// ./jour4/dart-sass/sass --help
+
+
+// cd jour4
+
+// compiler le fichier scss => css
+// .\\dart-sass\\sass.bat 02-map.scss 02-map-manuel.css
+// 
+// ./dart-sass/sass 02-map.scss 02-map-manuel.css
+
+
+// choisir le nom du fichier css 
+// .\\dart-sass\\sass.bat 02-map.scss style.css
+// 
+// ./dart-sass/sass 02-map.scss style.css
+
+// est que le fichier css final minifié ou non 
+
+// choisir le nom du fichier css + compressé
+// Windows
+// .\\dart-sass\\sass.bat 02-map.scss style.min.css --style=compressed
+// Mac
+// ./dart-sass/sass 02-map.scss style.min.css --style=compressed
+
+
+// choisir le nom du fichier css  + compressé + enlevé le fichier map
+// Windows
+// .\\dart-sass\\sass.bat 02-map.scss style2.min.css --style=compressed --no-source-map
+// Mac
+// ./dart-sass/sass 02-map.scss style2.min.css --style=compressed --no-source-map
+
+
+// choisir le nom du fichier css  + compressé + enlevé le fichier map
+// Windows
+// .\\dart-sass\\sass.bat 02-map.scss style2.min.css --style=compressed --no-source-map --watch
+// Mac
+// ./dart-sass/sass 02-map.scss style2.min.css --style=compressed --no-source-map --watch
+
+%b{
+    border-bottom: 1px solid $color;
+}
+
+p{
+    color : $color;
+    @extend %b ;
+    background: green;
+}
+
+img{
+    border-radius: 5px;
+    @extend %b ;
+}
+
+/* quelque soit la commande saisie ! garder toujours tous les fichiers 
+.scss 
+=> minimum les fichiers .scss
+=> .map 
+=> le site internet .min.css
+*/
+
+
+// choisir le nom du fichier css  + compressé + enlevé le fichier map
+// Windows
+// .\\dart-sass\\sass.bat 02-map.scss style2.min.css --style=compressed --watch
+// Mac
+// ./dart-sass/sass 02-map.scss style2.min.css --style=compressed --watch
+
+// => si vous ne travaillez avec visual studio (Sublim Text ) => vous pouvez quand même utiliser sass pour vos projets
+
+// arrêter le mode Watch Ctrl + C puis O Enter 
