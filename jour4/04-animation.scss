@@ -1,5 +1,11 @@
 $largeur : 200px;
-$colors : (1 : red , 2 : green, 3 : blue, 4: pink,5: purple);
+$colors : (
+    1 : red , 
+    2 : green, 
+    3 : blue, 
+    4: pink,
+    5: purple
+);
 .container{
     display: flex;
     div{
@@ -12,5 +18,78 @@ $colors : (1 : red , 2 : green, 3 : blue, 4: pink,5: purple);
             border:2px solid $c ;
             background: $c ;
         }
+        .d1{
+            // situation initiale
+            // la transition => la mettre sur l'état initial
+            transition: transform 0.5s;
+        }
+        .d1:hover{
+            // situation finale 
+            transform: translateY(50px);
+        }
+        .d2{
+            // initiale
+            transition: transform 2s;
+        }
+        .d2:hover{
+            // rectangle 
+            transform : rotate(150deg) ; 
+        }
+        .d3{
+            transition: transform 2s;
+        }
+        .d3:hover{
+            // décale vers le bas en + rotation 60deg 
+            // appliquer plusieurs déplacement simultanément 
+            // il faut les cumuler dans le transform 
+            //de l'état final
+            transform : translateY(150px) rotate(60deg) ;
+        }
+        .d4{
+            // initial
+            transition: transform 2s, height 2s  ;
+            // si je ne mets pas background => modification est instantanée
+        }
+        .d4:hover{
+            // final
+            transform : translateY(150px) rotate(60deg) ;
+            background : red ; 
+            height:40px; 
+        }
+        overflow: hidden;
+        .d5{
+            // initial
+            transition: transform 1s;
+        }
+        .d5:hover{
+            // final 
+            // attention cette propriété n'est pas animable 
+            // display : none;
+            // parcontre on peut utiliser l'opacité
+            //opacity : 0 ;
+            // disparaitre quelque chose => glisser hors de la page
+            transform : translateY( $largeur *  1 );
+        }
     }
 }
+
+// pour faire des animations en css => 2 techniques 
+// transition => animation qui vont être lancée suite à une action réalisée 
+// par l'internaute => lorsque l'on passe sur un block hover 
+
+// transition 
+// deux situations 
+// => situation initiale
+// => situation finale
+// rectangle rouge = situation initiale 
+// rectangle rouge LORSQUE je passe ma souris dessus => décaler vers le bas de 50px 
+
+
+// animation => pas besoin d'être d'une action pour être lancée 
+// elle va être exécuté directement 
+
+
+// bon café rdv 15h45 pour la suite !! 
+
+// re 
+// Moussa es tu là ?
