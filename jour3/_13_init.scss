@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background: $blue-clair;
+}
+
+ul , h1 , h2, h3 , h4 , p {
+    // enlever les marges et le padding par défaut => réinitialiser le navigateur 
+    margin:0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:$gris
+}
+
+img{
+    border-radius: 5px;
+}

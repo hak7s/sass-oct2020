@@ -1,25 +1,44 @@
-body {
-  margin: 0;
-  font-family: sans-serif;
-}
-
-header nav .menu, header nav .sous-menu {
+header .nav-top .menu, header .nav-top .sous-menu, header .nav-bottom ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-header nav form input[type="text"], header nav form input[type="submit"] {
+header .nav-top form input[type="text"], header .nav-top form input[type="submit"] {
   padding: 10px;
   border-radius: 5px;
   border: none;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f8f9fa;
+}
+
+ul, h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #869c88;
+}
+
+img {
+  border-radius: 5px;
 }
 
 header {
   color: white;
 }
 
-header nav {
+header .nav-top {
   background: #343a40;
   padding: 10px 20px;
   display: -webkit-box;
@@ -30,49 +49,49 @@ header nav {
           align-items: center;
 }
 
-header nav .logo {
+header .nav-top .logo {
   margin: 0;
   margin-right: 60px;
   font-size: 1.1rem;
   text-transform: uppercase;
 }
 
-header nav .menu {
+header .nav-top .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-header nav .menu > li {
+header .nav-top .menu > li {
   margin-right: 60px;
   color: #869c88;
   cursor: pointer;
   position: relative;
 }
 
-header nav .menu .actif {
+header .nav-top .menu .actif {
   color: white;
 }
 
-header nav .menu > li:hover .sous-menu {
+header .nav-top .menu > li:hover .sous-menu {
   display: block;
 }
 
-header nav .sous-menu {
+header .nav-top .sous-menu {
   position: absolute;
   display: none;
 }
 
-header nav .sous-menu > li {
+header .nav-top .sous-menu > li {
   padding: 10px 20px;
   background: #343a40;
 }
 
-header nav form {
+header .nav-top form {
   margin-left: auto;
 }
 
-header nav form input[type="submit"] {
+header .nav-top form input[type="submit"] {
   border: 1px solid #28a745;
   color: #28a745;
   background: none;
@@ -81,23 +100,107 @@ header nav form input[type="submit"] {
   transition: background 2s , color 2s;
 }
 
-header nav form input[type="submit"]:hover {
+header .nav-top form input[type="submit"]:hover {
   background: #28a745;
   color: white;
 }
 
-.p {
-  background: blue;
-  color: black;
+header .nav-bottom {
+  padding: 10px 20px;
+  background: white;
+}
+
+header .nav-bottom ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .nav-bottom ul > li {
+  margin-right: 20px;
+  color: #869c88;
+  cursor: pointer;
   position: relative;
 }
 
-.p h1:hover + p {
-  display: block;
+.container {
+  margin: 20px auto;
+  width: 960px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
 }
 
-.p p {
-  display: none;
-  position: absolute;
+.container .section-top {
+  background: #6f42c1;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+}
+
+.container .section-top div {
+  margin-left: 10px;
+}
+
+.container .section-top h1 {
+  color: white;
+  font-size: 1.1em;
+}
+
+.container .section-top p {
+  color: #869c88;
+  font-size: 0.8em;
+}
+
+.container .section-middle, .container .section-bottom {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.container .section-middle h2, .container .section-bottom h2 {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+.container .section-middle li, .container .section-bottom li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.container .section-middle li img, .container .section-bottom li img {
+  width: 20px;
+  margin-right: 10px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 10px;
+}
+
+.container .section-middle li p, .container .section-bottom li p {
+  width: calc( 85% - 20px - 10px);
+  font-size: 0.9em;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f8f9fa;
+}
+
+.container .section-middle footer, .container .section-bottom footer {
+  text-align: right;
+  font-size: 0.8em;
+  margin-bottom: 20px;
+}
+
+.container .section-bottom li a {
+  margin-left: auto;
+  font-size: 0.8em;
 }
 /*# sourceMappingURL=13-exo.css.map */

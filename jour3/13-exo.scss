@@ -1,14 +1,17 @@
 // sur firefox => outil 
 // pipette 
+// variable.scss
+
+//DRY : Don't Repeat Yourself
+// découpe mon css en sous partie => module 
+// => pas des fichiers trop long 
 $noir : #343a40;
 $vert : #28a745 ;
 $gris : #869c88;
+$blue-clair : #f8f9fa;
+$violet : #6f42c1 ;
 $m : 20px ;
-
-body{
-    margin: 0;
-    font-family: sans-serif;
-}
+$width-container : 960px ;
 
 %ul{
     margin: 0;
@@ -22,78 +25,10 @@ body{
     border:none;
 }
 
-header{
-    color : white;
-    nav{
-        background: $noir ;
-        padding : $m / 2 $m ;
-        display: flex;
-        align-items: center;
-        .logo{
-            margin:0;
-            margin-right: $m * 3;
-            font-size: 1.1rem;
-            text-transform: uppercase;
-        }
-        .menu{
-            display: flex;
-            @extend %ul;
-            &>li{
-                margin-right: $m * 3;
-                color : $gris;
-                cursor: pointer;
-                position: relative;
-            }
-            .actif{
-                color:white;
-            }
-            &>li:hover .sous-menu{
-                display: block;
-            }
-        }
-        .sous-menu{
-            position: absolute;
-            display: none;
-            @extend %ul;
-            &>li{
-                padding: $m /2 $m;
-                background: $noir;
-            }
-        }
-       
-        form{
-            margin-left: auto; // règle avec flex box
-            input[type="text"]{
-                @extend %input;
-            }
-            input[type="submit"]{
-                @extend %input;
-                border:1px solid $vert;
-                color: $vert ;
-                background: none;
-                cursor: pointer;
-                transition:background 2s , color 2s  ;
-                &:hover{
-                    background: $vert;
-                    color : white;
-                }
-            }
-        }
-    }
-}
+@import "_13_init" ;
+@import "_13_header";
+@import "_13_main" ;
 
-.p{
-    background: blue;
-    color: black;
-    position: relative; // parent
-    h1:hover+p{
-        display: block; // apparaitre SANS affecter la hauteur du parent
-    }
-    p{
-        display: none;
-        position: absolute; // enfant 
-    }
-}
 
-// finir le cas => tout le reste 
-// ce soir et demain matin correction !!!! 
+
+

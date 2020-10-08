@@ -1,0 +1,73 @@
+header{
+    color : white;
+    .nav-top{
+        background: $noir ;
+        padding : $m / 2 $m ;
+        display: flex;
+        align-items: center;
+        .logo{
+            margin:0;
+            margin-right: $m * 3;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+        }
+        .menu{
+            display: flex;
+            @extend %ul;
+            &>li{
+                margin-right: $m * 3;
+                color : $gris;
+                cursor: pointer;
+                position: relative;
+            }
+            .actif{
+                color:white;
+            }
+            &>li:hover .sous-menu{
+                display: block;
+            }
+        }
+        .sous-menu{
+            position: absolute;
+            display: none;
+            @extend %ul;
+            &>li{
+                padding: $m /2 $m;
+                background: $noir;
+            }
+        }
+       
+        form{
+            margin-left: auto; // règle avec flex box
+            input[type="text"]{
+                @extend %input;
+            }
+            input[type="submit"]{
+                @extend %input;
+                border:1px solid $vert;
+                color: $vert ;
+                background: none;
+                cursor: pointer;
+                transition:background 2s , color 2s  ;
+                &:hover{
+                    background: $vert;
+                    color : white;
+                }
+            }
+        }
+    }
+    .nav-bottom{
+        padding : $m / 2 $m ;
+        background: white;
+        ul{
+            display: flex;
+            @extend %ul;
+            &>li{
+                margin-right: $m ;
+                color : $gris;
+                cursor: pointer;
+                position: relative;
+            }
+        }
+    }
+}
