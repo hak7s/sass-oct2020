@@ -1,0 +1,25 @@
+$color : red ;
+$size : 25px;
+
+p{
+    font-size : $size;
+}
+
+li{
+    color : $color ;
+}
+
+// transformer en css 
+// 03-style.css
+// minifié + pas de fichier .map
+
+// Windows ou sur Mac OS 
+// cd jour4
+
+// Windows 
+// .\\dart-sass\\sass.bat 03-exo.scss 03-style.css --style=compressed --no-source-map
+
+// MacOs
+// ./dart-sass/sass 03-exo.scss 03-style.css --style=compressed --no-source-map
+
+// 04-animation.html et 04-animation.scss

@@ -1,0 +1,16 @@
+$largeur : 200px;
+$colors : (1 : red , 2 : green, 3 : blue, 4: pink,5: purple);
+.container{
+    display: flex;
+    div{
+        width:$largeur;
+        height: $largeur;
+        margin-right: 10px;
+    }
+    @each $index , $c in $colors{
+        .d#{  $index }{
+            border:2px solid $c ;
+            background: $c ;
+        }
+    }
+}
