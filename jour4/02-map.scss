@@ -161,3 +161,21 @@ img{
 // => si vous ne travaillez avec visual studio (Sublim Text ) => vous pouvez quand même utiliser sass pour vos projets
 
 // arrêter le mode Watch Ctrl + C puis O Enter 
+
+/*
+ Créer le fichier 03-exo.scss 
+
+ ce fichier contient le code suivant :
+
+ $color : red ;
+ $size : 25px;
+
+ p{
+     font-size : $size;
+ }
+ li{
+     color : $color ;
+ }
+ compiler le fichier 03-exo.scss en fichier 03-style.css 
+ le fichier ne devra pas comporter de fichier map associé + il devra être compressé (minifié) 
+*/
