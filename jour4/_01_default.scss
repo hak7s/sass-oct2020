@@ -1,0 +1,32 @@
+// 2ème bloc => réinitialiser le navigateur  
+
+  h1, h2, h3 , p{
+    margin: 0;
+}
+
+body, ul , li{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+
+// 3ème comportement par défaut pour certaines balises 
+h2 {
+    color : $gris-fonce;
+}
+p, li{
+    color : $gris-fonce;
+    font-family: sans-serif;
+}
+
+h2 , h3{
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+iframe{
+    width: 100%;
+    height: 200px;
+}

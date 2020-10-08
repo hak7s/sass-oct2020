@@ -1,0 +1,166 @@
+h1, h2, h3, p {
+  margin: 0;
+}
+
+body, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  color: #817d7e;
+}
+
+p, li {
+  color: #817d7e;
+  font-family: sans-serif;
+}
+
+h2, h3 {
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+iframe {
+  width: 100%;
+  height: 200px;
+}
+
+.container {
+  margin: 25px 20px;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 30px;
+  font-size: 1.5em;
+}
+
+header h2 {
+  margin-bottom: 30px;
+  font-size: 0.8em;
+}
+
+header hr {
+  width: 30px;
+  border-top: 4px solid black;
+  border-bottom: none;
+  margin-bottom: 120px;
+}
+
+section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1.5fr;
+      grid-template-columns: 3fr 1.5fr;
+  grid-gap: 30px;
+}
+
+form {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+}
+
+form input, form textarea {
+  padding: 13.33333px;
+  border: 2px solid #f1f1f1;
+}
+
+form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+form input:-ms-input-placeholder, form textarea:-ms-input-placeholder {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+form input::-ms-input-placeholder, form textarea::-ms-input-placeholder {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+form input::placeholder, form textarea::placeholder {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+form textarea::-webkit-input-placeholder {
+  font-size: 0.75em;
+  font-family: sans-serif;
+}
+
+form textarea:-ms-input-placeholder {
+  font-size: 0.75em;
+  font-family: sans-serif;
+}
+
+form textarea::-ms-input-placeholder {
+  font-size: 0.75em;
+  font-family: sans-serif;
+}
+
+form textarea::placeholder {
+  font-size: 0.75em;
+  font-family: sans-serif;
+}
+
+form textarea {
+  height: 150px;
+}
+
+form .copy {
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+form p {
+  text-align: center;
+}
+
+form input[type="submit"] {
+  justify-self: flex-end;
+  cursor: pointer;
+  margin-top: 60px;
+  padding: 10px 40px;
+  background: none;
+  border: 2px solid black;
+  -webkit-transition: background 2s , color 2s;
+  transition: background 2s , color 2s;
+}
+
+form input[type="submit"]:hover {
+  color: white;
+  background: black;
+}
+
+aside .widget {
+  margin-bottom: 20px;
+}
+
+aside h3 {
+  margin-bottom: 20px;
+}
+
+aside p {
+  text-align: justify;
+  font-size: 0.8em;
+}
+
+aside li {
+  font-size: 0.8em;
+}
+/*# sourceMappingURL=01-exo.css.map */

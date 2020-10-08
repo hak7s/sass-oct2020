@@ -1,0 +1,17 @@
+// SASS => réfléchir à bien structurer votre code css 
+// block 
+
+// 1er bloc => variables + pseudo class pour pouvoir hériter dans les bloc qui vont suivre
+$gris : #f1f1f1;
+$gris-fonce : #817d7e;
+// astuce même le noir et le blanc comme variable 
+$m : 20px ;
+
+@import "_01_default" ;
+
+@import "_01_grille" ;
+
+@import "_01_formulaire";
+
+@import "_01_aside";
+

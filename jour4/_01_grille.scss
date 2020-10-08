@@ -1,0 +1,31 @@
+// mettre en forme chaque partie du design 
+
+.container{
+    margin: $m + 5  $m ;
+}
+
+// entête
+header{
+    text-align: center;
+    h1{
+        margin-bottom: $m * 1.5;
+        font-size: 1.5em;
+    }
+    h2{
+        margin-bottom: $m * 1.5;
+        font-size: 0.8em;
+    }
+    hr{
+        width: $m * 1.5 ;
+        border-top: 4px solid black;
+        border-bottom: none;
+        margin-bottom: $m * 6;
+    }
+}
+
+// centre
+section{
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    grid-gap: $m * 1.5 ;
+}
