@@ -5,6 +5,20 @@ img{
 }
 
 
+// -- version aujourdhui
+// dès que vous avez un bloc de css qui se répète et qui varie un peu
+// => mixin !!! 
+@mixin effet( $prop-css , $duree , $valeur  ){
+    transition: $prop-css $duree;
+    &:hover{
+        #{ $prop-css }: $valeur;
+    }
+}
+
+
+
+// -- version hier
+
 .ligne{
     display: grid;
     grid-template-columns: repeat(5 , 1fr);
@@ -17,17 +31,19 @@ img{
     }
 
     div:first-child img{
-        transition: transform 3s;
+        @include effet ( transform , 3s ,  rotate(180deg) ); 
+        /*transition: transform 3s;
         &:hover{
             transform: rotate(180deg);
-        }
+        }*/
     }
 
     div:nth-child(2) p{
-        transition: color 3s;
+        @include effet ( color , 1s ,  red ); 
+        /*transition: color 3s;
         &:hover{
             color:red;
-        }
+        }*/
     }
 
     div:nth-child(3) img{
