@@ -1,0 +1,100 @@
+
+$gris : #b3a79e;
+$rouge : #f64b3c;
+$blanc : white;
+$noir : black;
+
+$m : 10px;
+
+// initialiser notre navigateur 
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+}
+h1 , p {
+    margin: 0;
+}
+
+.container{
+    margin: 0 auto;
+    width: 960px;
+}
+
+header{
+    background:$gris;
+    padding: $m / 2 $m ;
+    margin: $m * 2 0;
+}
+nav{   
+    text-align: center;
+    margin-bottom: $m * 2 ;
+    ul:first-child{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        li:first-child{
+            border-top-left-radius: 5px;
+        }
+        li:nth-child(2){
+            border-top-right-radius: 5px;
+        }
+    }
+    ul:last-child{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        li:first-child{
+            border-bottom-left-radius: 5px;
+        }
+        li:last-child{
+            border-bottom-right-radius: 5px;
+        }
+    }
+    li{
+        background: $rouge ;
+        border:1px solid $noir;
+        padding: $m / 2 0;
+        a{
+            font-size: 1.3em;
+            color: $blanc;
+            text-decoration: none;
+        }
+    }
+}
+
+.image-une{
+    margin-bottom: $m * 2 ;
+   /*  img{
+        max-width:  calc( 100% - #{ $m * 4 });
+        padding: $m * 2 ;
+        background: $gris;
+    } */
+
+    img{
+        max-width: 100%;
+        padding: $m * 2 ;
+        background: $gris;
+        box-sizing: border-box;
+        // lorsque que tu calcules les 100% en prenant
+        // en compte les padding 
+    }
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: $m * 2 ;
+    img{
+        max-width: 100%;
+        margin-bottom: $m * 2  ;
+    }
+    p{
+        text-align: justify;
+        margin-bottom: $m * 2  ;
+    }
+}
