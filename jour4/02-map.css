@@ -1,6 +1,44 @@
+@charset "UTF-8";
 h1 {
   color: red;
   font-size: 20px;
   text-align: center;
 }
+
+p, img {
+  border-bottom: 1px solid red;
+}
+
+p {
+  color: red;
+  background: green;
+}
+
+img {
+  border-radius: 5px;
+}
+
+/* quelque soit la commande saisie ! garder toujours tous les fichiers 
+.scss 
+=> minimum les fichiers .scss
+=> .map 
+=> le site internet .min.css
+*/
+/*
+ Créer le fichier 03-exo.scss 
+
+ ce fichier contient le code suivant :
+
+ $color : red ;
+ $size : 25px;
+
+ p{
+     font-size : $size;
+ }
+ li{
+     color : $color ;
+ }
+ compiler le fichier 03-exo.scss en fichier 03-style.css 
+ le fichier ne devra pas comporter de fichier map associé + il devra être compressé (minifié) 
+*/
 /*# sourceMappingURL=02-map.css.map */

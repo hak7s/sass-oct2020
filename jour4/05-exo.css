@@ -1,0 +1,85 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.ligne {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+
+.ligne div {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.ligne div:first-child img {
+  -webkit-transition: -webkit-transform 3s;
+  transition: -webkit-transform 3s;
+  transition: transform 3s;
+  transition: transform 3s, -webkit-transform 3s;
+  /*transition: transform 3s;
+        &:hover{
+            transform: rotate(180deg);
+        }*/
+}
+
+.ligne div:first-child img:hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.ligne div:nth-child(2) p {
+  -webkit-transition: color 1s;
+  transition: color 1s;
+  /*transition: color 3s;
+        &:hover{
+            color:red;
+        }*/
+}
+
+.ligne div:nth-child(2) p:hover {
+  color: red;
+}
+
+.ligne div:nth-child(3) img {
+  -webkit-transition: -webkit-transform 3s;
+  transition: -webkit-transform 3s;
+  transition: transform 3s;
+  transition: transform 3s, -webkit-transform 3s;
+}
+
+.ligne div:nth-child(3) img:hover {
+  -webkit-transform: rotate(90deg) scale(1.2);
+          transform: rotate(90deg) scale(1.2);
+}
+
+.ligne div:nth-child(4) p {
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.ligne div:nth-child(4) p:hover {
+  opacity: 0;
+}
+
+.ligne div:nth-child(5) {
+  overflow: hidden;
+}
+
+.ligne div:nth-child(5) p {
+  -webkit-transition: -webkit-transform 4s;
+  transition: -webkit-transform 4s;
+  transition: transform 4s;
+  transition: transform 4s, -webkit-transform 4s;
+}
+
+.ligne div:nth-child(5) p:hover {
+  -webkit-transform: translateX(300px);
+          transform: translateX(300px);
+}
+/*# sourceMappingURL=05-exo.css.map */

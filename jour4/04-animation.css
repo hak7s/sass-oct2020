@@ -1,0 +1,372 @@
+@charset "UTF-8";
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  overflow: hidden;
+  overflow: hidden;
+  overflow: hidden;
+  overflow: hidden;
+}
+
+.container div {
+  width: 200px;
+  height: 200px;
+  margin-right: 10px;
+}
+
+.container .d1 {
+  border: 2px solid red;
+  background: red;
+}
+
+.container .d1 {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.container .d1:hover {
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+}
+
+.container .d2 {
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+}
+
+.container .d2:hover {
+  -webkit-transform: rotate(150deg);
+          transform: rotate(150deg);
+}
+
+.container .d3 {
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+}
+
+.container .d3:hover {
+  -webkit-transform: translateY(150px) rotate(60deg);
+          transform: translateY(150px) rotate(60deg);
+}
+
+.container .d4 {
+  -webkit-transition: height 2s, -webkit-transform 2s;
+  transition: height 2s, -webkit-transform 2s;
+  transition: transform 2s, height 2s;
+  transition: transform 2s, height 2s, -webkit-transform 2s;
+}
+
+.container .d4:hover {
+  -webkit-transform: translateY(150px) rotate(60deg);
+          transform: translateY(150px) rotate(60deg);
+  background: red;
+  height: 40px;
+}
+
+.container .d5 {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.container .d5:hover {
+  -webkit-transform: translateY(200px);
+          transform: translateY(200px);
+}
+
+.container .d2 {
+  border: 2px solid green;
+  background: green;
+}
+
+.container .d1 {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.container .d1:hover {
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+}
+
+.container .d2 {
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+}
+
+.container .d2:hover {
+  -webkit-transform: rotate(150deg);
+          transform: rotate(150deg);
+}
+
+.container .d3 {
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+}
+
+.container .d3:hover {
+  -webkit-transform: translateY(150px) rotate(60deg);
+          transform: translateY(150px) rotate(60deg);
+}
+
+.container .d4 {
+  -webkit-transition: height 2s, -webkit-transform 2s;
+  transition: height 2s, -webkit-transform 2s;
+  transition: transform 2s, height 2s;
+  transition: transform 2s, height 2s, -webkit-transform 2s;
+}
+
+.container .d4:hover {
+  -webkit-transform: translateY(150px) rotate(60deg);
+          transform: translateY(150px) rotate(60deg);
+  background: red;
+  height: 40px;
+}
+
+.container .d5 {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.container .d5:hover {
+  -webkit-transform: translateY(200px);
+          transform: translateY(200px);
+}
+
+.container .d3 {
+  border: 2px solid blue;
+  background: blue;
+}
+
+.container .d1 {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.container .d1:hover {
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+}
+
+.container .d2 {
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+}
+
+.container .d2:hover {
+  -webkit-transform: rotate(150deg);
+          transform: rotate(150deg);
+}
+
+.container .d3 {
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+}
+
+.container .d3:hover {
+  -webkit-transform: translateY(150px) rotate(60deg);
+          transform: translateY(150px) rotate(60deg);
+}
+
+.container .d4 {
+  -webkit-transition: height 2s, -webkit-transform 2s;
+  transition: height 2s, -webkit-transform 2s;
+  transition: transform 2s, height 2s;
+  transition: transform 2s, height 2s, -webkit-transform 2s;
+}
+
+.container .d4:hover {
+  -webkit-transform: translateY(150px) rotate(60deg);
+          transform: translateY(150px) rotate(60deg);
+  background: red;
+  height: 40px;
+}
+
+.container .d5 {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.container .d5:hover {
+  -webkit-transform: translateY(200px);
+          transform: translateY(200px);
+}
+
+.container .d4 {
+  border: 2px solid pink;
+  background: pink;
+}
+
+.container .d1 {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.container .d1:hover {
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+}
+
+.container .d2 {
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+}
+
+.container .d2:hover {
+  -webkit-transform: rotate(150deg);
+          transform: rotate(150deg);
+}
+
+.container .d3 {
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+}
+
+.container .d3:hover {
+  -webkit-transform: translateY(150px) rotate(60deg);
+          transform: translateY(150px) rotate(60deg);
+}
+
+.container .d4 {
+  -webkit-transition: height 2s, -webkit-transform 2s;
+  transition: height 2s, -webkit-transform 2s;
+  transition: transform 2s, height 2s;
+  transition: transform 2s, height 2s, -webkit-transform 2s;
+}
+
+.container .d4:hover {
+  -webkit-transform: translateY(150px) rotate(60deg);
+          transform: translateY(150px) rotate(60deg);
+  background: red;
+  height: 40px;
+}
+
+.container .d5 {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.container .d5:hover {
+  -webkit-transform: translateY(200px);
+          transform: translateY(200px);
+}
+
+.container .d5 {
+  border: 2px solid purple;
+  background: purple;
+}
+
+.container .d1 {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.container .d1:hover {
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+}
+
+.container .d2 {
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+}
+
+.container .d2:hover {
+  -webkit-transform: rotate(150deg);
+          transform: rotate(150deg);
+}
+
+.container .d3 {
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+}
+
+.container .d3:hover {
+  -webkit-transform: translateY(150px) rotate(60deg);
+          transform: translateY(150px) rotate(60deg);
+}
+
+.container .d4 {
+  -webkit-transition: height 2s, -webkit-transform 2s;
+  transition: height 2s, -webkit-transform 2s;
+  transition: transform 2s, height 2s;
+  transition: transform 2s, height 2s, -webkit-transform 2s;
+}
+
+.container .d4:hover {
+  -webkit-transform: translateY(150px) rotate(60deg);
+          transform: translateY(150px) rotate(60deg);
+  background: red;
+  height: 40px;
+}
+
+.container .d5 {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.container .d5:hover {
+  -webkit-transform: translateY(200px);
+          transform: translateY(200px);
+}
+
+/* .container
+     .ligne
+        5 cellules 
+    1ère cellule 
+        image  => au passage de souris => image rotation de 180deg en 3 s
+    2ème cellule 
+        p avec 30 mots => changer la couleur de police vers le rouge en 2 s
+    3ème celulle 
+        h1 ave 4 mots
+        img 300x300 responsive => rotation de 90deg + augmenter sa largeur de 20% en 2s
+    4ème cellule
+        p> 30 mots  => faire disparaitre le texte avec de l'opacité en 1 s
+    5eme cellule 
+        p avec 30 mots => glisser le texte vers la droite pour el faire disparaitre en 4 s
+
+    Bonus => version minifiée du fichier css final 05-style.css
+    sans fichier .map
+*/
+/*# sourceMappingURL=04-animation.css.map */

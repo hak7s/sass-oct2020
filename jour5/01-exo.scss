@@ -1,0 +1,37 @@
+
+ul{
+    display : flex;
+    // l'espace à droite restant je veux le répartir de manière uniforme entre chaque li 
+    justify-content: space-between;
+    // cette propriété permet de répartir l'espace restant entre chaque élément 
+    // flex-start espace apres le dernier élément 
+    // flex-end espace devant le premier élément 
+    // center espace avant et après de manière identique 
+    // space-between espace restant mis en manière égale entre chaque li 
+    // space-around : entre les éléments et aussi un peu avant et à la fin 
+    padding: 0;
+    list-style: none;
+}
+
+section{
+    display: grid;
+    // par défaut grille qui a une seule colonne
+    // dans votre navigateur 
+    // vous avez une aide visuelle 
+    // définir le nombre de colonne de notre grille
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    // quelque soit la largeur de l'élément => la règle de la grille 
+    // passer en priorité ! 
+    // pour les grilles => création d'une nouvelle unité fr 
+    // le fr => fraction pour ne pas utiliser % 
+
+    grid-gap:40px;
+
+    // 1000px => 33.33% => chque colonne 333px 
+    // 1000px +  2 x 40px = 1080px <= la largeur de ma grille 
+
+    grid-template-columns: 1fr 1fr 1fr;
+    // 1fr => dédié pour les grilles 
+    // 1000px - (2 * 40px) = 920px  / 3 = 306.6666px = 1fr
+    // rdv 10h48 pour la suite !! 
+}
