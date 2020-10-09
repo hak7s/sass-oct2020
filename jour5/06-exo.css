@@ -1,0 +1,106 @@
+.container {
+  margin: 0 auto;
+  width: 800px;
+}
+
+.container header {
+  -webkit-animation: apparition-haut 3s;
+          animation: apparition-haut 3s;
+}
+
+.container section div:first-child {
+  -webkit-animation: apparition-gauche 3s;
+          animation: apparition-gauche 3s;
+}
+
+.container section div:last-child {
+  -webkit-animation: apparition-droite 3s;
+          animation: apparition-droite 3s;
+}
+
+section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+@-webkit-keyframes apparition-haut {
+  from {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes apparition-haut {
+  from {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes apparition-gauche {
+  from {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes apparition-gauche {
+  from {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes apparition-droite {
+  from {
+    -webkit-transform: translateX(200px);
+            transform: translateX(200px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes apparition-droite {
+  from {
+    -webkit-transform: translateX(200px);
+            transform: translateX(200px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=06-exo.css.map */

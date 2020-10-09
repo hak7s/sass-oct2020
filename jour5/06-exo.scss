@@ -1,0 +1,60 @@
+.container{
+    margin: 0 auto;
+    width:800px;
+   
+
+    header{
+        animation : apparition-haut 3s ;
+    }
+
+    section{
+        div:first-child{
+            animation : apparition-gauche 3s ;
+        }
+        div:last-child{
+            animation : apparition-droite 3s ;
+        }
+    }
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+@keyframes apparition-haut{
+    from{
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes apparition-gauche{
+    from{
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes apparition-droite{
+    from{
+        transform: translateX(200px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
