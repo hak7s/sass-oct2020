@@ -1,0 +1,36 @@
+
+body{
+margin: 0;
+padding: 0;
+}
+.item{
+    border:1px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+// pouvez vous me créer une grille de 3 colonnes de largeur identique
+// ayant une espace entre les cellules de la grille de 25px 
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; // 4 colonnes
+    grid-gap: 25px;
+
+    @media screen and (max-width: 700px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media screen and (max-width: 500px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (max-width: 300px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+// créer le fichier 03-exo.html et le fichier 03-exo.scss 
+// support 3 rappels section 5 Display grid > Cas n°2 - design responsive
+// réaliser le design décrit dans ce cas 
+
