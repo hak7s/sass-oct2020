@@ -1,0 +1,65 @@
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.ligne{
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+    grid-gap: 10px;
+
+    div{
+        border:1px solid black;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    div:first-child img{
+        transition: transform 3s;
+        &:hover{
+            transform: rotate(180deg);
+        }
+    }
+
+    div:nth-child(2) p{
+        transition: color 3s;
+        &:hover{
+            color:red;
+        }
+    }
+
+    div:nth-child(3) img{
+        transition: transform 3s;
+        &:hover{
+            transform: rotate(90deg) scale(1.2);
+        }
+    }
+
+    div:nth-child(4) p{
+        transition: opacity 1s;
+        &:hover{
+            opacity: 0;
+        }
+    }
+
+    div:nth-child(5) {
+        overflow: hidden;
+        p{
+            transition: transform 4s;
+            &:hover{
+                transform: translateX(300px);
+            }
+        }
+    }
+}
+
+// commment optimiser le code précédent via une mixin  ??? 
+
+// bonne soirée à tout le monde !!!
+
+// des questions ??? sur ce que l'on a vu hier ??
+// commment optimiser le code précédent via une mixin  ??? 
+// :nth-child() //:nth-of-type()
+// créer le dossier jour5 
