@@ -1,0 +1,142 @@
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1020px;
+}
+
+.entete nav {
+  padding: 10px;
+}
+
+.entete nav:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.entete form {
+  width: 540px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #855dc1;
+}
+
+.entete form input[type="submit"] {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #543385;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  border: none;
+  padding: 12px 23px;
+}
+
+.entete form input[type="submit"]:hover {
+  background-color: #412868;
+}
+
+.entete form input[type="text"] {
+  padding: 12px 23px;
+  border: none;
+  border-radius: 5px;
+}
+
+.entete form span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.entete form .fa {
+  font-size: 1.2rem;
+  margin: 0 0 0 10px;
+}
+
+.entete ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.entete li:first-child {
+  margin-left: 0;
+}
+
+.entete li {
+  margin-left: 30px;
+}
+
+.entete li a {
+  color: black;
+  font-size: 0.9rem;
+}
+
+nav:last-child {
+  background-color: #f5f5f5;
+}
+
+nav:last-child ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav:last-child li {
+  margin-right: 30px;
+}
+
+nav:last-child li a {
+  color: black;
+  font-size: 0.8rem;
+}
+
+nav:last-child li a:hover {
+  color: #007fad;
+}
+
+.logo {
+  font-size: 2rem;
+}
+/*# sourceMappingURL=05-moussa-exo.css.map */

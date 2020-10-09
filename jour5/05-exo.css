@@ -1,0 +1,199 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, p, figure {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top form input[type="submit"] {
+  margin-left: 10px;
+  color: white;
+  border-radius: 50px;
+  background: #543385;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.top form div {
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.top form input[type="text"] {
+  border-top: 2px solid #543385;
+  border-bottom: 2px solid #543385;
+  border-right: 2px solid #543385;
+  border-left: none;
+  padding: 10px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.top form i {
+  border-top: 2px solid #543385;
+  border-bottom: 2px solid #543385;
+  border-right: none;
+  border-left: 2px solid #543385;
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: #543385;
+}
+
+.top ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.top ul li:last-child {
+  margin-left: 20px;
+}
+
+.bottom {
+  background: #f5f5f5;
+  padding: 10px;
+}
+
+.bottom ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bottom ul li {
+  margin-right: 20px;
+}
+
+.presentation {
+  text-align: center;
+  padding: 30px;
+}
+
+.presentation h2 {
+  font-size: 1.6em;
+}
+
+.presentation .liste {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  width: 70%;
+  margin: 0 auto;
+  grid-gap: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .presentation .liste {
+    width: 90%;
+  }
+}
+
+.presentation .liste article {
+  margin-top: 40px;
+  border: 2px solid #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 3px 3px #f5f5f5;
+          box-shadow: 3px 3px 3px #f5f5f5;
+}
+
+.presentation .liste article i {
+  font-size: 2.3em;
+}
+
+.presentation .liste article h3 {
+  color: #007d91;
+}
+
+.presentation .liste article p {
+  margin-bottom: 20px;
+}
+
+.presentation .liste article a {
+  padding: 10px 20px;
+  color: white;
+  border-radius: 50px;
+  background: #00a9c4;
+}
+
+.details {
+  background: #543385;
+  color: white;
+  padding: 40px 20%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.details img {
+  max-width: 100%;
+}
+
+.details figure {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.details div > * {
+  margin-bottom: 20px;
+}
+
+.partenaires {
+  text-align: center;
+  padding: 40px;
+}
+
+.partenaires h2 {
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=05-exo.css.map */

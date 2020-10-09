@@ -1,0 +1,131 @@
+$bleu: #007fad;
+$turquoise: #007d91;
+$gris: #cccccc;
+$mauve : #543385;
+$bleu-pale: #f5f5f5;
+
+$container-width: 960px;
+$rayon: 5px;
+$marge: 30px;
+
+
+@mixin nop-nom {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin btn( $bg-color ) {
+    display: inline-block;
+    padding:$marge/2 $marge ;
+    background-color:  $bg-color;
+    color: white;
+    border-radius: $rayon *6;
+    cursor :pointer;
+    &:hover {
+        background-color: darken( $bg-color, $amount: 8%);
+    }
+   
+}
+
+ul{
+    @include nop-nom();
+
+}
+
+li{
+    list-style: none;
+}
+
+figure{
+    @include nop-nom();
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    @include nop-nom();
+    font-family:sans-serif;
+}
+
+.container {
+    margin:  0 auto;
+    width: $container-width+60px;
+}
+
+.entete {
+
+    nav {
+        padding: $marge/3;
+    }
+
+    nav:first-child {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    form {
+        width: 540px;
+        display: flex;
+        justify-content: space-between;
+        color: lighten($mauve, 20px);
+
+    }
+    form input[type="submit"] {
+        @include btn( $mauve );
+        border: none;
+        padding: $marge - 18px $marge - 7px;
+      }
+      form input[type="text"] {
+        padding: $marge - 18px $marge - 7px;
+        border: none;
+        border-radius: $rayon;
+      }
+  
+      form span {
+        display: flex;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: $rayon;
+      }
+      form .fa {
+        font-size: 1.2rem;
+        margin: 0 0 0 10px;
+      }
+      ul {
+        display: flex;
+        align-items: center;
+      }
+      li:first-child {
+        margin-left: 0;
+      }
+      li {
+        margin-left: $marge;
+      }
+  
+      li a {
+        color: black;
+        font-size: 0.9rem;
+      }
+    }
+    nav:last-child {
+      background-color: $bleu-pale;
+      ul {
+        display: flex;
+      }
+      li {
+        margin-right: $marge;
+        a {
+          color: black;
+          font-size: 0.8rem;
+          &:hover {
+            color: $bleu;
+          }
+        }
+      }
+    }
+    .logo {
+      font-size: 2rem;
+    }

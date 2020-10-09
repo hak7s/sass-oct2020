@@ -1,0 +1,48 @@
+.top{
+    display: flex;
+    justify-content: space-between;
+    padding: $m $m/2;
+    align-items: center;
+    form{
+        display: flex;
+        align-items: center;
+        input[type="submit"]{
+            margin-left: $m/2;
+            color: white;
+            border-radius: 50px;
+            background: $mauve;
+            padding: $m / 2 $m;
+            border: none;
+            cursor: pointer;
+        }
+        div{
+            margin-left: $m/2;
+            display: flex;
+        }
+        input[type="text"]{
+            border-top: 2px solid $mauve;
+            border-bottom: 2px solid $mauve;
+            border-right: 2px solid $mauve;
+            border-left: none;
+            padding: $m / 2 ;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        i{
+            border-top: 2px solid $mauve;
+            border-bottom: 2px solid $mauve;
+            border-right: none; 
+            border-left: 2px solid $mauve;
+            padding: $m / 2 ;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            color: $mauve;
+        }
+    }
+    ul{
+        display: flex;
+        li:last-child{
+            margin-left: $m;
+        }
+    }
+}
