@@ -43,7 +43,6 @@ $m : 20px;
             i{
                 font-size: 2.3em;
             }
-
             h3{
                 color: $azur;
             }
@@ -89,3 +88,42 @@ $m : 20px;
         margin-bottom: $m ;
     }
 }
+
+
+.presentation{
+    article{
+        animation: apparition 3s;
+    }
+}
+
+@keyframes apparition{
+    from{
+        transform: translateY(60px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+// créer la page 06-exo.html // 06-exo.scss
+
+// page html =>
+
+/*
+// header > image 200x100
+
+grille de deux colonnes => deux colonnes font la même largeur 
+    première colonne => h1 et p avec 30 mots
+
+    deuxième colonne > image  200x100
+
+en scss 
+    au chargement de la page => 
+    image dans le head va apparaitre en glissant vers le bas + effet opacité
+
+    le h1 et le p apparaitre effet de glisser + effet opacité depuis la gauche
+
+    image dans la deuxième colonne apparaitre effet de glisser + effet opacité depuis la droite
+*/

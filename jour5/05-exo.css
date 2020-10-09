@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
@@ -196,4 +197,52 @@ a {
 .partenaires h2 {
   margin-bottom: 20px;
 }
+
+.presentation article {
+  -webkit-animation: apparition 3s;
+          animation: apparition 3s;
+}
+
+@-webkit-keyframes apparition {
+  from {
+    -webkit-transform: translateY(60px);
+            transform: translateY(60px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes apparition {
+  from {
+    -webkit-transform: translateY(60px);
+            transform: translateY(60px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/*
+// header > image 200x100
+
+grille de deux colonnes => deux colonnes font la même largeur 
+    première colonne => h1 et p avec 30 mots
+
+    deuxième colonne > image  200x100
+
+en scss 
+    au chargement de la page => 
+    image dans le head va apparaitre en glissant vers le bas + effet opacité
+
+    le h1 et le p apparaitre effet de glisser + effet opacité depuis la gauche
+
+    image dans la deuxième colonne apparaitre effet de glisser + effet opacité depuis la droite
+*/
 /*# sourceMappingURL=05-exo.css.map */
