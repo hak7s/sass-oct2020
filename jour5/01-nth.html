@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        ul li:nth-child(1){
+            background: red;
+        }
+        section p:nth-child(2){
+            background: blue;
+        }
+        div img:last-child{
+            border:2px solid green;
+        }
+    </style>
+
+    <!-- balise ul qui contient des éléments de même nature li -->
+    <ul>
+        <li>Lorem, ipsum dolor.</li><!-- 1 :nth-child(1) // :first-child -->
+        <li>Quaerat, modi nihil?</li>
+        <li>Eos, corrupti nulla!</li>
+    </ul>
+    <section>
+        <p>Lorem, ipsum.</p>
+        <p>Libero, hic!</p><!-- 2 -->
+        <p>Asperiores, minus.</p>
+    </section>
+    <div>
+        <img src="https://via.placeholder.com/100x80" alt="">
+        <img src="https://via.placeholder.com/100x80" alt="">
+        <img src="https://via.placeholder.com/100x80" alt=""><!-- -->
+    </div>
+
+    <hr>
+    <style>
+        /* je veux sélectionner la 2ème qui est stockée dans la balise header */
+
+        header img:nth-child(2){
+            border:3px solid red; /* c'est bizarre */ 
+        }
+
+        header img:nth-of-type(2){
+            border:3px solid purple;
+        }
+    </style>
+    <header>
+        <h1>Lorem, ipsum.</h1> <!-- 1 -->
+        <img src="https://via.placeholder.com/100x80" alt=""><!-- 2 --><!-- 1 -->
+        <img src="https://via.placeholder.com/100x80" alt=""><!-- 3 --><!-- 2 -->
+        <p>légende pour décrire l'image</p> <!-- 4 -->
+        <img src="https://via.placeholder.com/100x80" alt=""><!-- 5 --><!-- 3 -->
+    </header>
+
+</body>
+</html>
